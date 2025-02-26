@@ -1,0 +1,1937 @@
+fileFormatVersion: 2
+guid: d99b441d01ef58d4a96e8aab444b2cad
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6462517220497613105
+    second: Arrow_impact_pack_0
+  - first:
+      213: 2185792063082478084
+    second: Arrow_impact_pack_1
+  - first:
+      213: -3642613463254091277
+    second: Arrow_impact_pack_2
+  - first:
+      213: -2524227205295649064
+    second: Arrow_impact_pack_3
+  - first:
+      213: -2511603583180650830
+    second: Arrow_impact_pack_4
+  - first:
+      213: -6095885908242921149
+    second: Arrow_impact_pack_5
+  - first:
+      213: -6753593025868895508
+    second: Arrow_impact_pack_6
+  - first:
+      213: 6852799620829409212
+    second: Arrow_impact_pack_7
+  - first:
+      213: -7667028909180035860
+    second: Arrow_impact_pack_8
+  - first:
+      213: -695775715959745032
+    second: Arrow_impact_pack_9
+  - first:
+      213: -1145221247841416786
+    second: Arrow_impact_pack_10
+  - first:
+      213: 9031504345025512979
+    second: Arrow_impact_pack_11
+  - first:
+      213: -5606538139466911519
+    second: Arrow_impact_pack_12
+  - first:
+      213: 4258532582030632986
+    second: Arrow_impact_pack_13
+  - first:
+      213: -4728192174595285676
+    second: Arrow_impact_pack_14
+  - first:
+      213: -3471528080960213939
+    second: Arrow_impact_pack_15
+  - first:
+      213: -4995228646219920854
+    second: Arrow_impact_pack_16
+  - first:
+      213: 6665102481412503728
+    second: Arrow_impact_pack_17
+  - first:
+      213: -4485970745731703491
+    second: Arrow_impact_pack_18
+  - first:
+      213: -8494556519402155370
+    second: Arrow_impact_pack_19
+  - first:
+      213: 6343635013558044504
+    second: Arrow_impact_pack_20
+  - first:
+      213: 347115174372661835
+    second: Arrow_impact_pack_21
+  - first:
+      213: 8108311304331640109
+    second: Arrow_impact_pack_22
+  - first:
+      213: 1153969053079417962
+    second: Arrow_impact_pack_23
+  - first:
+      213: -2937606455425996931
+    second: Arrow_impact_pack_24
+  - first:
+      213: 1935535982171575491
+    second: Arrow_impact_pack_25
+  - first:
+      213: 797989746404784950
+    second: Arrow_impact_pack_26
+  - first:
+      213: 6967067208670566985
+    second: Arrow_impact_pack_27
+  - first:
+      213: -791410345456138416
+    second: Arrow_impact_pack_28
+  - first:
+      213: -2392989384039360567
+    second: Arrow_impact_pack_29
+  - first:
+      213: 3376171392966103066
+    second: Arrow_impact_pack_30
+  - first:
+      213: 339461557230102929
+    second: Arrow_impact_pack_31
+  - first:
+      213: 2310499534504224453
+    second: Arrow_impact_pack_32
+  - first:
+      213: -3460184865344462985
+    second: Arrow_impact_pack_33
+  - first:
+      213: -1348701706636309439
+    second: Arrow_impact_pack_34
+  - first:
+      213: -5645306703248960283
+    second: Arrow_impact_pack_35
+  - first:
+      213: 4658106864699597499
+    second: Arrow_impact_pack_36
+  - first:
+      213: 3157692971125454545
+    second: Arrow_impact_pack_37
+  - first:
+      213: 7187523725375218968
+    second: Arrow_impact_pack_38
+  - first:
+      213: 2611850873208401801
+    second: Arrow_impact_pack_39
+  - first:
+      213: -4971001632232504007
+    second: Arrow_impact_pack_40
+  - first:
+      213: -1392186061985354866
+    second: Arrow_impact_pack_41
+  - first:
+      213: 5422796638733396325
+    second: Arrow_impact_pack_42
+  - first:
+      213: 8532757063276775606
+    second: Arrow_impact_pack_43
+  - first:
+      213: -7070950432660494402
+    second: Arrow_impact_pack_44
+  - first:
+      213: 1167264526048425198
+    second: Arrow_impact_pack_45
+  - first:
+      213: -8792048233172637352
+    second: Arrow_impact_pack_46
+  - first:
+      213: 5627423352925900702
+    second: Arrow_impact_pack_47
+  - first:
+      213: -804987920094261727
+    second: Arrow_impact_pack_48
+  - first:
+      213: -2527201374162319731
+    second: Arrow_impact_pack_49
+  - first:
+      213: -4542970546754624990
+    second: Arrow_impact_pack_50
+  - first:
+      213: -6605400129549143609
+    second: Arrow_impact_pack_51
+  - first:
+      213: -1448130901318875008
+    second: Arrow_impact_pack_52
+  - first:
+      213: 6773360837251404362
+    second: Arrow_impact_pack_53
+  - first:
+      213: 4304670038205141925
+    second: Arrow_impact_pack_54
+  - first:
+      213: 5684127523225561342
+    second: Arrow_impact_pack_55
+  - first:
+      213: 6362592431976099756
+    second: Arrow_impact_pack_56
+  - first:
+      213: -2814198224475309987
+    second: Arrow_impact_pack_57
+  - first:
+      213: 4988637479470345694
+    second: Arrow_impact_pack_58
+  - first:
+      213: -5545949602568514625
+    second: Arrow_impact_pack_59
+  - first:
+      213: -8983938369688528690
+    second: Arrow_impact_pack_60
+  - first:
+      213: 725090293748255421
+    second: Arrow_impact_pack_61
+  - first:
+      213: 2144012818658972301
+    second: Arrow_impact_pack_62
+  - first:
+      213: 7808382921172808054
+    second: Arrow_impact_pack_63
+  - first:
+      213: -2621826625069821210
+    second: Arrow_impact_pack_64
+  - first:
+      213: -5149307486688510724
+    second: Arrow_impact_pack_65
+  - first:
+      213: 3742705569336479468
+    second: Arrow_impact_pack_66
+  - first:
+      213: -5120727544940719958
+    second: Arrow_impact_pack_67
+  - first:
+      213: -2318898077178138653
+    second: Arrow_impact_pack_68
+  - first:
+      213: 135791736407585688
+    second: Arrow_impact_pack_69
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arrow_impact_pack_0
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 4767
+        width: 98
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cfeb5940019ad444a01eddc5333ae1e
+      internalID: 6462517220497613105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_1
+      rect:
+        serializedVersion: 2
+        x: 3007
+        y: 4799
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825968cffac3e2d4fb7647f348476eb0
+      internalID: 2185792063082478084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_2
+      rect:
+        serializedVersion: 2
+        x: 4959
+        y: 4767
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e5cfba2d4659e42b7be35c42bc3ae0
+      internalID: -3642613463254091277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_3
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 4511
+        width: 578
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c521b6220d2934fbd7d7f98c795b23
+      internalID: -2524227205295649064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_4
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 4447
+        width: 522
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8275ef7f3dcec04b969e54da85b4993
+      internalID: -2511603583180650830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_5
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 4468
+        width: 516
+        height: 379
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885a32c903946af459e7ed5073af1573
+      internalID: -6095885908242921149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_6
+      rect:
+        serializedVersion: 2
+        x: 2943
+        y: 4703
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ccf9d65f973c904798d5723bba70b54
+      internalID: -6753593025868895508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_7
+      rect:
+        serializedVersion: 2
+        x: 3807
+        y: 4502
+        width: 375
+        height: 293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab924c06ba5801429f8c847563a4da5
+      internalID: 6852799620829409212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_8
+      rect:
+        serializedVersion: 2
+        x: 3967
+        y: 4735
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b639df53ada11c4c8a7a208e8e82d88
+      internalID: -7667028909180035860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_9
+      rect:
+        serializedVersion: 2
+        x: 4940
+        y: 4451
+        width: 180
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a03f9759d072f4408108c800debaacc
+      internalID: -695775715959745032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_10
+      rect:
+        serializedVersion: 2
+        x: 2975
+        y: 4511
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d39c35ecf45e6a4fba87f01a42ce40a
+      internalID: -1145221247841416786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_11
+      rect:
+        serializedVersion: 2
+        x: 3999
+        y: 4511
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d32af67646c8445886efc1a44e5094
+      internalID: 9031504345025512979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_12
+      rect:
+        serializedVersion: 2
+        x: 4063
+        y: 4543
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfcc0801b0b55b542a992531c3f79616
+      internalID: -5606538139466911519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_13
+      rect:
+        serializedVersion: 2
+        x: 5055
+        y: 4479
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39be49862394c154d906c093b77957f1
+      internalID: 4258532582030632986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_14
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 3743
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb5e516653523d48b5b67d4209ec609
+      internalID: -4728192174595285676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_15
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 3775
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f03c0683166c344bbd8635ac81867f
+      internalID: -3471528080960213939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_16
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 3679
+        width: 162
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b399d3707416340a3f397a7a09dc4d
+      internalID: -4995228646219920854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_17
+      rect:
+        serializedVersion: 2
+        x: 3839
+        y: 3807
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322f670f98e01544ba156644c7526f8c
+      internalID: 6665102481412503728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_18
+      rect:
+        serializedVersion: 2
+        x: 3903
+        y: 3711
+        width: 130
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995d9aa65699b8c4aa659b5aefd46b60
+      internalID: -4485970745731703491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_19
+      rect:
+        serializedVersion: 2
+        x: 4927
+        y: 3775
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85f22e645945074aae5694f2a17b1af
+      internalID: -8494556519402155370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_20
+      rect:
+        serializedVersion: 2
+        x: 5023
+        y: 3743
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e917da5b71e9807418ede4908e7107d3
+      internalID: 6343635013558044504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_21
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 3679
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61292c01596613f4e876ae7e3fafab3a
+      internalID: 347115174372661835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_22
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 3551
+        width: 546
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf0e0a7c12fe2c43a1408c81edb5f99
+      internalID: 8108311304331640109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_23
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 3551
+        width: 514
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486dc622df87f6042b9d0bf800e98323
+      internalID: 1153969053079417962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_24
+      rect:
+        serializedVersion: 2
+        x: 3711
+        y: 3551
+        width: 386
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 271e52df594496e45a5be0f90fdd608e
+      internalID: -2937606455425996931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_25
+      rect:
+        serializedVersion: 2
+        x: 4895
+        y: 3551
+        width: 225
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebdc685dda9122c4eaccf6dbe16d3111
+      internalID: 1935535982171575491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_26
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 3551
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b758529ba044ebc4e90b36bdd8a031f4
+      internalID: 797989746404784950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_27
+      rect:
+        serializedVersion: 2
+        x: 3839
+        y: 3487
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05a2dfe42d300940ab109b606e9a3d8
+      internalID: 6967067208670566985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_28
+      rect:
+        serializedVersion: 2
+        x: 5055
+        y: 3487
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983c1c7312c07a64c8b75780b2909bb5
+      internalID: -791410345456138416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_29
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 3423
+        width: 162
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f442eeed3e02cfe4b92001c4f5c17595
+      internalID: -2392989384039360567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_30
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 3423
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9665bab162a95b74c801a549888a997e
+      internalID: 3376171392966103066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_31
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 3487
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3932a6e9b659449b297605e05e9ad7
+      internalID: 339461557230102929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_32
+      rect:
+        serializedVersion: 2
+        x: 2815
+        y: 3423
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda8dce00871ab84d86d73e38270a06a
+      internalID: 2310499534504224453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_33
+      rect:
+        serializedVersion: 2
+        x: 3039
+        y: 3455
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1eeaa82edc9f584dbd92ef8dbf983a3
+      internalID: -3460184865344462985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_34
+      rect:
+        serializedVersion: 2
+        x: 3935
+        y: 3455
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0f4b06c9b3de04eb89b9c47a833a9f
+      internalID: -1348701706636309439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_35
+      rect:
+        serializedVersion: 2
+        x: 2751
+        y: 3423
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a09f104a9640e488c86b3763b7709e
+      internalID: -5645306703248960283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_36
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 2719
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8991ac115699c344837967500b9c31a
+      internalID: 4658106864699597499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_37
+      rect:
+        serializedVersion: 2
+        x: 3583
+        y: 2463
+        width: 514
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ac354f3bca61e45b4ddb8301eb3102
+      internalID: 3157692971125454545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_38
+      rect:
+        serializedVersion: 2
+        x: 4959
+        y: 2719
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc5268475a0842449ab0de61b458e9b
+      internalID: 7187523725375218968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_39
+      rect:
+        serializedVersion: 2
+        x: 5087
+        y: 2751
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754959b081c577344ac6858ae0b43759
+      internalID: 2611850873208401801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_40
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 2527
+        width: 130
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbbf90c8428cd14d8884a2273c99708
+      internalID: -4971001632232504007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_41
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 2655
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92b350825df92f448d4be7c18d66632
+      internalID: -1392186061985354866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_42
+      rect:
+        serializedVersion: 2
+        x: 2431
+        y: 2495
+        width: 546
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e50f4911c10294e969127a18378231
+      internalID: 5422796638733396325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_43
+      rect:
+        serializedVersion: 2
+        x: 4767
+        y: 2527
+        width: 353
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b7565a5eb283440923180d393dfdad
+      internalID: 8532757063276775606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_44
+      rect:
+        serializedVersion: 2
+        x: 5023
+        y: 2687
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d41d0fa9664e7446b088ecd58f350fe
+      internalID: -7070950432660494402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_45
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 2527
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d1e59831933f545aadab0399e5b686
+      internalID: 1167264526048425198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_46
+      rect:
+        serializedVersion: 2
+        x: 5023
+        y: 2495
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36deb652a5e2da4428b2f56d5d98336f
+      internalID: -8792048233172637352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_47
+      rect:
+        serializedVersion: 2
+        x: 4063
+        y: 2431
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d21429225dad214cbcee128b2b85aff
+      internalID: 5627423352925900702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_48
+      rect:
+        serializedVersion: 2
+        x: 4991
+        y: 2431
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab0964429f01bc48b42305b08be34c5
+      internalID: -804987920094261727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_49
+      rect:
+        serializedVersion: 2
+        x: 5087
+        y: 2463
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060bb726d735bc743a2ffa7f3450bb5c
+      internalID: -2527201374162319731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_50
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 2399
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfff82ce4a75bf4884e7d9397bc2756
+      internalID: -4542970546754624990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_51
+      rect:
+        serializedVersion: 2
+        x: 5023
+        y: 2367
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd939d74913ae97468d9083bd611b6ef
+      internalID: -6605400129549143609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_52
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1503
+        width: 258
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5055818e5399a4f8a4cb8b213ad115
+      internalID: -1448130901318875008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_53
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 1439
+        width: 130
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a3d70c1ceb61f4d9290748ebea3784
+      internalID: 6773360837251404362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_54
+      rect:
+        serializedVersion: 2
+        x: 2975
+        y: 1503
+        width: 98
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011a5195b7045fd429f671cf4d3795e2
+      internalID: 4304670038205141925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_55
+      rect:
+        serializedVersion: 2
+        x: 4063
+        y: 1631
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecbb9177052307d459e92846c37e84c3
+      internalID: 5684127523225561342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_56
+      rect:
+        serializedVersion: 2
+        x: 4383
+        y: 1471
+        width: 546
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f33161f777322b4688b0a2bae79753f
+      internalID: 6362592431976099756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_57
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1471
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b7434c8a99f5443a3274df47fc2b70
+      internalID: -2814198224475309987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_58
+      rect:
+        serializedVersion: 2
+        x: 4063
+        y: 1503
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f59d23ff8d6d5b48802ffa4fb2e090a
+      internalID: 4988637479470345694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_59
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 1439
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030c238c56242d74085d8f1fc0d94516
+      internalID: -5545949602568514625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_60
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 1375
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525c88223296b7742905852103e1e678
+      internalID: -8983938369688528690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_61
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 1311
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061587c20e534c144a935b99176163de
+      internalID: 725090293748255421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_62
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 415
+        width: 514
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1e97f61080450408cc27aacda6a2fa
+      internalID: 2144012818658972301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_63
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 447
+        width: 354
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a41cb4b000295b249b3af51262466b1c
+      internalID: 7808382921172808054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_64
+      rect:
+        serializedVersion: 2
+        x: 2911
+        y: 383
+        width: 162
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2e831d019d8b64cb8427db742a7c04
+      internalID: -2621826625069821210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_65
+      rect:
+        serializedVersion: 2
+        x: 3999
+        y: 447
+        width: 98
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2082ca24084e6740a2d550faf63bdf6
+      internalID: -5149307486688510724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_66
+      rect:
+        serializedVersion: 2
+        x: 5087
+        y: 575
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c6fa95859a8734b925c92425750734
+      internalID: 3742705569336479468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_67
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 415
+        width: 130
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc905e47d2c1d241ba61d3e458ab603
+      internalID: -5120727544940719958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_68
+      rect:
+        serializedVersion: 2
+        x: 5087
+        y: 447
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06619c19fc674104397ccb1787ef444d
+      internalID: -2318898077178138653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_impact_pack_69
+      rect:
+        serializedVersion: 2
+        x: 2975
+        y: 319
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1006ac96fd6dae54d85a5d0441cf7d2a
+      internalID: 135791736407585688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d395b1c00c912434d8e8b75cf621b21a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Arrow_impact_pack_0: 6462517220497613105
+      Arrow_impact_pack_1: 2185792063082478084
+      Arrow_impact_pack_10: -1145221247841416786
+      Arrow_impact_pack_11: 9031504345025512979
+      Arrow_impact_pack_12: -5606538139466911519
+      Arrow_impact_pack_13: 4258532582030632986
+      Arrow_impact_pack_14: -4728192174595285676
+      Arrow_impact_pack_15: -3471528080960213939
+      Arrow_impact_pack_16: -4995228646219920854
+      Arrow_impact_pack_17: 6665102481412503728
+      Arrow_impact_pack_18: -4485970745731703491
+      Arrow_impact_pack_19: -8494556519402155370
+      Arrow_impact_pack_2: -3642613463254091277
+      Arrow_impact_pack_20: 6343635013558044504
+      Arrow_impact_pack_21: 347115174372661835
+      Arrow_impact_pack_22: 8108311304331640109
+      Arrow_impact_pack_23: 1153969053079417962
+      Arrow_impact_pack_24: -2937606455425996931
+      Arrow_impact_pack_25: 1935535982171575491
+      Arrow_impact_pack_26: 797989746404784950
+      Arrow_impact_pack_27: 6967067208670566985
+      Arrow_impact_pack_28: -791410345456138416
+      Arrow_impact_pack_29: -2392989384039360567
+      Arrow_impact_pack_3: -2524227205295649064
+      Arrow_impact_pack_30: 3376171392966103066
+      Arrow_impact_pack_31: 339461557230102929
+      Arrow_impact_pack_32: 2310499534504224453
+      Arrow_impact_pack_33: -3460184865344462985
+      Arrow_impact_pack_34: -1348701706636309439
+      Arrow_impact_pack_35: -5645306703248960283
+      Arrow_impact_pack_36: 4658106864699597499
+      Arrow_impact_pack_37: 3157692971125454545
+      Arrow_impact_pack_38: 7187523725375218968
+      Arrow_impact_pack_39: 2611850873208401801
+      Arrow_impact_pack_4: -2511603583180650830
+      Arrow_impact_pack_40: -4971001632232504007
+      Arrow_impact_pack_41: -1392186061985354866
+      Arrow_impact_pack_42: 5422796638733396325
+      Arrow_impact_pack_43: 8532757063276775606
+      Arrow_impact_pack_44: -7070950432660494402
+      Arrow_impact_pack_45: 1167264526048425198
+      Arrow_impact_pack_46: -8792048233172637352
+      Arrow_impact_pack_47: 5627423352925900702
+      Arrow_impact_pack_48: -804987920094261727
+      Arrow_impact_pack_49: -2527201374162319731
+      Arrow_impact_pack_5: -6095885908242921149
+      Arrow_impact_pack_50: -4542970546754624990
+      Arrow_impact_pack_51: -6605400129549143609
+      Arrow_impact_pack_52: -1448130901318875008
+      Arrow_impact_pack_53: 6773360837251404362
+      Arrow_impact_pack_54: 4304670038205141925
+      Arrow_impact_pack_55: 5684127523225561342
+      Arrow_impact_pack_56: 6362592431976099756
+      Arrow_impact_pack_57: -2814198224475309987
+      Arrow_impact_pack_58: 4988637479470345694
+      Arrow_impact_pack_59: -5545949602568514625
+      Arrow_impact_pack_6: -6753593025868895508
+      Arrow_impact_pack_60: -8983938369688528690
+      Arrow_impact_pack_61: 725090293748255421
+      Arrow_impact_pack_62: 2144012818658972301
+      Arrow_impact_pack_63: 7808382921172808054
+      Arrow_impact_pack_64: -2621826625069821210
+      Arrow_impact_pack_65: -5149307486688510724
+      Arrow_impact_pack_66: 3742705569336479468
+      Arrow_impact_pack_67: -5120727544940719958
+      Arrow_impact_pack_68: -2318898077178138653
+      Arrow_impact_pack_69: 135791736407585688
+      Arrow_impact_pack_7: 6852799620829409212
+      Arrow_impact_pack_8: -7667028909180035860
+      Arrow_impact_pack_9: -695775715959745032
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

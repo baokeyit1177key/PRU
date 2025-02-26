@@ -290,12 +290,12 @@ TextureImporter:
       name: Swordsman_spritelist_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 1153
-        width: 51
-        height: 73
+        x: 35
+        y: 1154
+        width: 49
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -312,12 +312,12 @@ TextureImporter:
       name: Swordsman_spritelist_1
       rect:
         serializedVersion: 2
-        x: 162
-        y: 1153
-        width: 51
-        height: 73
+        x: 163
+        y: 1154
+        width: 49
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -334,12 +334,12 @@ TextureImporter:
       name: Swordsman_spritelist_2
       rect:
         serializedVersion: 2
-        x: 290
-        y: 1153
-        width: 51
-        height: 73
+        x: 291
+        y: 1154
+        width: 49
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -356,12 +356,12 @@ TextureImporter:
       name: Swordsman_spritelist_3
       rect:
         serializedVersion: 2
-        x: 418
-        y: 1153
-        width: 51
-        height: 74
+        x: 419
+        y: 1154
+        width: 49
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -378,12 +378,12 @@ TextureImporter:
       name: Swordsman_spritelist_4
       rect:
         serializedVersion: 2
-        x: 546
-        y: 1153
-        width: 51
-        height: 75
+        x: 547
+        y: 1154
+        width: 49
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -400,12 +400,12 @@ TextureImporter:
       name: Swordsman_spritelist_5
       rect:
         serializedVersion: 2
-        x: 674
-        y: 1153
-        width: 51
-        height: 75
+        x: 675
+        y: 1154
+        width: 49
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -422,12 +422,12 @@ TextureImporter:
       name: Swordsman_spritelist_6
       rect:
         serializedVersion: 2
-        x: 802
-        y: 1153
-        width: 51
-        height: 74
+        x: 803
+        y: 1154
+        width: 49
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -444,12 +444,12 @@ TextureImporter:
       name: Swordsman_spritelist_7
       rect:
         serializedVersion: 2
-        x: 930
-        y: 1153
-        width: 51
-        height: 73
+        x: 931
+        y: 1154
+        width: 49
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -466,12 +466,12 @@ TextureImporter:
       name: Swordsman_spritelist_8
       rect:
         serializedVersion: 2
-        x: 28
-        y: 1023
-        width: 45
-        height: 77
+        x: 29
+        y: 1024
+        width: 43
+        height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -488,12 +488,12 @@ TextureImporter:
       name: Swordsman_spritelist_9
       rect:
         serializedVersion: 2
-        x: 156
-        y: 1023
-        width: 45
-        height: 78
+        x: 157
+        y: 1024
+        width: 43
+        height: 76
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -510,12 +510,12 @@ TextureImporter:
       name: Swordsman_spritelist_10
       rect:
         serializedVersion: 2
-        x: 284
-        y: 1023
-        width: 45
-        height: 78
+        x: 285
+        y: 1024
+        width: 43
+        height: 76
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -532,12 +532,12 @@ TextureImporter:
       name: Swordsman_spritelist_11
       rect:
         serializedVersion: 2
-        x: 412
-        y: 1023
-        width: 45
-        height: 77
+        x: 413
+        y: 1024
+        width: 43
+        height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -554,12 +554,12 @@ TextureImporter:
       name: Swordsman_spritelist_12
       rect:
         serializedVersion: 2
-        x: 540
-        y: 1023
-        width: 45
-        height: 76
+        x: 541
+        y: 1024
+        width: 43
+        height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -576,12 +576,12 @@ TextureImporter:
       name: Swordsman_spritelist_13
       rect:
         serializedVersion: 2
-        x: 668
-        y: 1023
-        width: 45
-        height: 77
+        x: 669
+        y: 1024
+        width: 43
+        height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -598,12 +598,12 @@ TextureImporter:
       name: Swordsman_spritelist_14
       rect:
         serializedVersion: 2
-        x: 796
-        y: 1023
-        width: 45
-        height: 77
+        x: 797
+        y: 1024
+        width: 43
+        height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -620,12 +620,12 @@ TextureImporter:
       name: Swordsman_spritelist_15
       rect:
         serializedVersion: 2
-        x: 924
-        y: 1023
-        width: 45
-        height: 76
+        x: 925
+        y: 1024
+        width: 43
+        height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -642,12 +642,12 @@ TextureImporter:
       name: Swordsman_spritelist_16
       rect:
         serializedVersion: 2
-        x: 35
-        y: 895
-        width: 45
-        height: 74
+        x: 36
+        y: 896
+        width: 43
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -664,12 +664,12 @@ TextureImporter:
       name: Swordsman_spritelist_17
       rect:
         serializedVersion: 2
-        x: 163
-        y: 895
-        width: 45
-        height: 73
+        x: 164
+        y: 896
+        width: 43
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -686,12 +686,12 @@ TextureImporter:
       name: Swordsman_spritelist_18
       rect:
         serializedVersion: 2
-        x: 291
-        y: 895
-        width: 45
-        height: 72
+        x: 292
+        y: 896
+        width: 43
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -708,12 +708,12 @@ TextureImporter:
       name: Swordsman_spritelist_19
       rect:
         serializedVersion: 2
-        x: 419
-        y: 895
-        width: 45
-        height: 73
+        x: 420
+        y: 896
+        width: 43
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -730,12 +730,12 @@ TextureImporter:
       name: Swordsman_spritelist_20
       rect:
         serializedVersion: 2
-        x: 547
-        y: 895
-        width: 45
-        height: 74
+        x: 548
+        y: 896
+        width: 43
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -752,12 +752,12 @@ TextureImporter:
       name: Swordsman_spritelist_21
       rect:
         serializedVersion: 2
-        x: 675
-        y: 895
-        width: 45
-        height: 73
+        x: 676
+        y: 896
+        width: 43
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -774,12 +774,12 @@ TextureImporter:
       name: Swordsman_spritelist_22
       rect:
         serializedVersion: 2
-        x: 803
-        y: 895
-        width: 45
-        height: 72
+        x: 804
+        y: 896
+        width: 43
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -796,12 +796,12 @@ TextureImporter:
       name: Swordsman_spritelist_23
       rect:
         serializedVersion: 2
-        x: 931
-        y: 895
-        width: 45
-        height: 73
+        x: 932
+        y: 896
+        width: 43
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -818,12 +818,12 @@ TextureImporter:
       name: Swordsman_spritelist_24
       rect:
         serializedVersion: 2
-        x: 29
-        y: 767
-        width: 45
-        height: 71
+        x: 30
+        y: 768
+        width: 43
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -840,12 +840,12 @@ TextureImporter:
       name: Swordsman_spritelist_25
       rect:
         serializedVersion: 2
-        x: 157
-        y: 767
-        width: 45
-        height: 70
+        x: 158
+        y: 768
+        width: 43
+        height: 68
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -862,12 +862,12 @@ TextureImporter:
       name: Swordsman_spritelist_26
       rect:
         serializedVersion: 2
-        x: 287
-        y: 767
-        width: 46
-        height: 76
+        x: 288
+        y: 768
+        width: 44
+        height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -884,12 +884,12 @@ TextureImporter:
       name: Swordsman_spritelist_27
       rect:
         serializedVersion: 2
-        x: 415
-        y: 769
-        width: 53
-        height: 76
+        x: 416
+        y: 770
+        width: 51
+        height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -906,12 +906,12 @@ TextureImporter:
       name: Swordsman_spritelist_28
       rect:
         serializedVersion: 2
-        x: 543
-        y: 772
-        width: 48
-        height: 73
+        x: 544
+        y: 773
+        width: 46
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -928,12 +928,12 @@ TextureImporter:
       name: Swordsman_spritelist_29
       rect:
         serializedVersion: 2
-        x: 671
-        y: 769
-        width: 53
-        height: 75
+        x: 672
+        y: 770
+        width: 51
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -950,12 +950,12 @@ TextureImporter:
       name: Swordsman_spritelist_30
       rect:
         serializedVersion: 2
-        x: 800
-        y: 767
-        width: 52
-        height: 73
+        x: 801
+        y: 768
+        width: 50
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -972,12 +972,12 @@ TextureImporter:
       name: Swordsman_spritelist_31
       rect:
         serializedVersion: 2
-        x: 928
-        y: 767
-        width: 45
-        height: 71
+        x: 929
+        y: 768
+        width: 43
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -994,12 +994,12 @@ TextureImporter:
       name: Swordsman_spritelist_32
       rect:
         serializedVersion: 2
-        x: 24
-        y: 639
-        width: 45
-        height: 77
+        x: 25
+        y: 640
+        width: 43
+        height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1016,12 +1016,12 @@ TextureImporter:
       name: Swordsman_spritelist_33
       rect:
         serializedVersion: 2
-        x: 152
-        y: 639
-        width: 45
-        height: 77
+        x: 153
+        y: 640
+        width: 43
+        height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1038,12 +1038,12 @@ TextureImporter:
       name: Swordsman_spritelist_34
       rect:
         serializedVersion: 2
-        x: 280
-        y: 639
-        width: 45
-        height: 77
+        x: 281
+        y: 640
+        width: 43
+        height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1060,12 +1060,12 @@ TextureImporter:
       name: Swordsman_spritelist_35
       rect:
         serializedVersion: 2
-        x: 415
-        y: 639
-        width: 45
-        height: 76
+        x: 416
+        y: 640
+        width: 43
+        height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1082,12 +1082,12 @@ TextureImporter:
       name: Swordsman_spritelist_36
       rect:
         serializedVersion: 2
-        x: 545
-        y: 639
-        width: 45
-        height: 75
+        x: 546
+        y: 640
+        width: 43
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1104,12 +1104,12 @@ TextureImporter:
       name: Swordsman_spritelist_37
       rect:
         serializedVersion: 2
-        x: 600
-        y: 661
-        width: 32
-        height: 26
+        x: 601
+        y: 662
+        width: 30
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1126,12 +1126,12 @@ TextureImporter:
       name: Swordsman_spritelist_38
       rect:
         serializedVersion: 2
-        x: 673
-        y: 639
-        width: 45
-        height: 75
+        x: 674
+        y: 640
+        width: 43
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1148,12 +1148,12 @@ TextureImporter:
       name: Swordsman_spritelist_39
       rect:
         serializedVersion: 2
-        x: 29
-        y: 511
-        width: 45
-        height: 75
+        x: 30
+        y: 512
+        width: 43
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1170,12 +1170,12 @@ TextureImporter:
       name: Swordsman_spritelist_40
       rect:
         serializedVersion: 2
-        x: 157
-        y: 511
-        width: 46
-        height: 75
+        x: 158
+        y: 512
+        width: 44
+        height: 73
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1192,12 +1192,12 @@ TextureImporter:
       name: Swordsman_spritelist_41
       rect:
         serializedVersion: 2
-        x: 213
-        y: 540
-        width: 17
-        height: 7
+        x: 214
+        y: 541
+        width: 15
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1214,12 +1214,12 @@ TextureImporter:
       name: Swordsman_spritelist_42
       rect:
         serializedVersion: 2
-        x: 217
-        y: 536
-        width: 25
-        height: 12
+        x: 218
+        y: 537
+        width: 23
+        height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1236,12 +1236,12 @@ TextureImporter:
       name: Swordsman_spritelist_43
       rect:
         serializedVersion: 2
-        x: 260
-        y: 511
-        width: 70
-        height: 76
+        x: 261
+        y: 512
+        width: 68
+        height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1258,12 +1258,12 @@ TextureImporter:
       name: Swordsman_spritelist_44
       rect:
         serializedVersion: 2
-        x: 12
-        y: 383
-        width: 65
-        height: 77
+        x: 13
+        y: 384
+        width: 63
+        height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1280,12 +1280,12 @@ TextureImporter:
       name: Swordsman_spritelist_45
       rect:
         serializedVersion: 2
-        x: 149
-        y: 383
-        width: 54
-        height: 76
+        x: 150
+        y: 384
+        width: 52
+        height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1302,12 +1302,12 @@ TextureImporter:
       name: Swordsman_spritelist_46
       rect:
         serializedVersion: 2
-        x: 287
-        y: 383
-        width: 70
-        height: 74
+        x: 288
+        y: 384
+        width: 68
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1324,12 +1324,12 @@ TextureImporter:
       name: Swordsman_spritelist_47
       rect:
         serializedVersion: 2
-        x: 350
-        y: 399
-        width: 8
-        height: 25
+        x: 351
+        y: 400
+        width: 6
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1346,12 +1346,12 @@ TextureImporter:
       name: Swordsman_spritelist_48
       rect:
         serializedVersion: 2
-        x: 354
-        y: 398
-        width: 14
-        height: 38
+        x: 355
+        y: 399
+        width: 12
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1368,12 +1368,12 @@ TextureImporter:
       name: Swordsman_spritelist_49
       rect:
         serializedVersion: 2
-        x: 415
-        y: 383
-        width: 67
-        height: 74
+        x: 416
+        y: 384
+        width: 65
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1390,12 +1390,12 @@ TextureImporter:
       name: Swordsman_spritelist_50
       rect:
         serializedVersion: 2
-        x: 34
-        y: 255
-        width: 51
-        height: 73
+        x: 35
+        y: 256
+        width: 49
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1412,12 +1412,12 @@ TextureImporter:
       name: Swordsman_spritelist_51
       rect:
         serializedVersion: 2
-        x: 161
-        y: 255
-        width: 51
-        height: 73
+        x: 162
+        y: 256
+        width: 49
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1434,12 +1434,12 @@ TextureImporter:
       name: Swordsman_spritelist_52
       rect:
         serializedVersion: 2
-        x: 288
-        y: 255
-        width: 51
-        height: 73
+        x: 289
+        y: 256
+        width: 49
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1456,12 +1456,12 @@ TextureImporter:
       name: Swordsman_spritelist_53
       rect:
         serializedVersion: 2
-        x: 29
-        y: 127
-        width: 45
-        height: 77
+        x: 30
+        y: 128
+        width: 43
+        height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1478,12 +1478,12 @@ TextureImporter:
       name: Swordsman_spritelist_54
       rect:
         serializedVersion: 2
-        x: 159
-        y: 127
-        width: 47
-        height: 74
+        x: 160
+        y: 128
+        width: 45
+        height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1500,12 +1500,12 @@ TextureImporter:
       name: Swordsman_spritelist_55
       rect:
         serializedVersion: 2
-        x: 286
-        y: 127
-        width: 50
-        height: 73
+        x: 287
+        y: 128
+        width: 48
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1522,12 +1522,12 @@ TextureImporter:
       name: Swordsman_spritelist_56
       rect:
         serializedVersion: 2
-        x: 18
+        x: 19
         y: 0
-        width: 49
-        height: 71
+        width: 47
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1544,12 +1544,12 @@ TextureImporter:
       name: Swordsman_spritelist_57
       rect:
         serializedVersion: 2
-        x: 148
+        x: 149
         y: 0
-        width: 45
-        height: 70
+        width: 43
+        height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1566,12 +1566,12 @@ TextureImporter:
       name: Swordsman_spritelist_58
       rect:
         serializedVersion: 2
-        x: 295
+        x: 296
         y: 0
-        width: 75
-        height: 34
+        width: 73
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1584,11 +1584,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Attack_Swordman_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 640
+        width: 692
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0b7c974c38b5342a8e432204fcb431
+      internalID: 1830070311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2cefbe9395b9fda4399792c4886f998d
     internalID: 0
     vertices: []
     indices: 
@@ -1597,7 +1619,67 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Attack_Swordman_1: 1830070311
+      Swordsman_spritelist_0: -80973615606561604
+      Swordsman_spritelist_1: 6822831416211605766
+      Swordsman_spritelist_10: 3232552302230569957
+      Swordsman_spritelist_11: 3405218481844275854
+      Swordsman_spritelist_12: 1692958565844881894
+      Swordsman_spritelist_13: -4519056179565217947
+      Swordsman_spritelist_14: -781237893541010405
+      Swordsman_spritelist_15: 8428608065346898497
+      Swordsman_spritelist_16: -6951912659773128660
+      Swordsman_spritelist_17: 5756508748258599702
+      Swordsman_spritelist_18: -2742398918510872093
+      Swordsman_spritelist_19: 7222081338666009793
+      Swordsman_spritelist_2: -9108561743344294904
+      Swordsman_spritelist_20: -3968849217970910160
+      Swordsman_spritelist_21: 1136650150591518594
+      Swordsman_spritelist_22: 4896598926848159680
+      Swordsman_spritelist_23: -6846054779468215791
+      Swordsman_spritelist_24: 1304288931153988906
+      Swordsman_spritelist_25: -2798087884205768295
+      Swordsman_spritelist_26: -7108728327558936268
+      Swordsman_spritelist_27: -1779167778804403513
+      Swordsman_spritelist_28: 6276644075669533674
+      Swordsman_spritelist_29: 5523679795594340597
+      Swordsman_spritelist_3: 6934830690382304389
+      Swordsman_spritelist_30: 1528880809169215090
+      Swordsman_spritelist_31: -4626047162116034784
+      Swordsman_spritelist_32: -4030657895935010868
+      Swordsman_spritelist_33: 4571171602085452049
+      Swordsman_spritelist_34: -1895411550202236892
+      Swordsman_spritelist_35: -3964428106855756881
+      Swordsman_spritelist_36: 5908291391413928559
+      Swordsman_spritelist_37: 8362721412321982027
+      Swordsman_spritelist_38: 4882697485194628482
+      Swordsman_spritelist_39: 7615890967822118239
+      Swordsman_spritelist_4: -7150395141976112716
+      Swordsman_spritelist_40: 8011767472412341251
+      Swordsman_spritelist_41: 8007955001107059215
+      Swordsman_spritelist_42: 2149176037826510539
+      Swordsman_spritelist_43: -4683733682817419188
+      Swordsman_spritelist_44: -6394336814520532245
+      Swordsman_spritelist_45: -1406790286294798357
+      Swordsman_spritelist_46: -1142009892823884475
+      Swordsman_spritelist_47: -7060653456666028899
+      Swordsman_spritelist_48: 4184362900777932192
+      Swordsman_spritelist_49: 9089740854668681973
+      Swordsman_spritelist_5: 5671348300284653625
+      Swordsman_spritelist_50: 1784357375858321898
+      Swordsman_spritelist_51: 4305936731898795061
+      Swordsman_spritelist_52: 7336450569527075105
+      Swordsman_spritelist_53: 3797733230054691506
+      Swordsman_spritelist_54: -3040751508597009602
+      Swordsman_spritelist_55: 340727791892948495
+      Swordsman_spritelist_56: -808564931518642370
+      Swordsman_spritelist_57: -2321730687807749724
+      Swordsman_spritelist_58: 8907092648540564748
+      Swordsman_spritelist_6: 6909368097758411104
+      Swordsman_spritelist_7: 2618160878532501121
+      Swordsman_spritelist_8: 8913364659021283276
+      Swordsman_spritelist_9: 7947016277071440028
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
