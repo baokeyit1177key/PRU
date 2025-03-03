@@ -18,11 +18,11 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0) && CooldownTimer > attackCooldown && movement.canAttack())
+        if (Input.GetMouseButton(0) && CooldownTimer > attackCooldown)
             Attack();
         CooldownTimer += Time.deltaTime;
-
     }
+
     private void Attack()
     {
         anim.SetTrigger("attack");
