@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Transform skillSpawnPoint; // Điểm xuất hiện skill
 
-    private Rigidbody2D myRigid;
+    public Rigidbody2D myRigid;
     private Animator animator;
     private BoxCollider2D boxCollider;
     private float horizontalInput;
