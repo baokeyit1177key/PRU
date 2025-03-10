@@ -5,18 +5,34 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce = 8f;
     public GameObject bulletPrefab;
-
+    private int maxHealth = 100;
+    public HealthBar healthBar;
+    private int currentHealth;
     private Rigidbody2D rb;
-    private Transform firePoint;
+    [SerializeField] private Transform firePoint;
     private int jumpCount = 2; // Nhảy tối đa 2 lần
-
+    [SerializeField] private float attackCooldown; // Cooldown time in seconds
+    private float cooldownTimer = 0f;
     public Transform groundCheck;  // Điểm kiểm tra mặt đất
     public float groundCheckRadius = 0.2f;
+    private Animator animator;
+    private BoxCollider2D boxCollider;
+    private float horizontalInput;
     public LayerMask groundLayer; // Layer của Ground
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+        boxCollider = GetComponent<BoxCollider2D>();
+    }
 
     void Start()
     {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        boxCollider = GetComponent<BoxCollider2D>();
 
         // Tạo FirePoint nếu chưa có
         if (firePoint == null)
@@ -39,9 +55,15 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Move();
         Aim();
-        Attack();
+        cooldownTimer += Time.deltaTime; // Update cooldown timer
+
+        if (Input.GetMouseButtonDown(0) && cooldownTimer >= attackCooldown) // Check cooldown before shooting
+        {
+            TakeDamage(20);
+            Shoot();
+            cooldownTimer = 0f; // Reset cooldown
+        }
         CheckGround(); // Kiểm tra mặt đất
 
         // Luôn đặt groundCheck ngay dưới chân nhân vật
@@ -49,8 +71,13 @@ public class PlayerController : MonoBehaviour
         {
             groundCheck.position = new Vector3(transform.position.x, transform.position.y - 1f, transform.position.z);
         }
+       
     }
-
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+    }
     void Move()
     {
         float moveX = Input.GetAxisRaw("Horizontal");
@@ -83,12 +110,19 @@ public class PlayerController : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         firePoint.rotation = Quaternion.Euler(0, 0, angle);
     }
-
-    void Attack()
+    private bool isGrounded()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        }
+        RaycastHit2D raycast = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
+        return raycast.collider != null;
+    }
+    void Shoot()
+    {
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePosition.z = 0f;
+
+        Vector3 shootDirection = (mousePosition - firePoint.position).normalized; // Get direction to mouse
+
+        GameObject projectile = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+        projectile.GetComponent<Projectiles>().SetDirection(shootDirection);
     }
 }
