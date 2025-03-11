@@ -1,0 +1,2092 @@
+fileFormatVersion: 2
+guid: 3decab54ee6f4474ea384f7dc2a221ac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3306397962037838349
+    second: Infantryman_spritelist_0
+  - first:
+      213: -4522125681347456515
+    second: Infantryman_spritelist_1
+  - first:
+      213: -7364032418944297654
+    second: Infantryman_spritelist_2
+  - first:
+      213: 2247363185373736611
+    second: Infantryman_spritelist_3
+  - first:
+      213: -9161675700067369570
+    second: Infantryman_spritelist_4
+  - first:
+      213: -2111389133381326576
+    second: Infantryman_spritelist_5
+  - first:
+      213: 6858649947508971967
+    second: Infantryman_spritelist_6
+  - first:
+      213: -5929458127198476175
+    second: Infantryman_spritelist_7
+  - first:
+      213: 7842818142038908413
+    second: Infantryman_spritelist_8
+  - first:
+      213: -7789160418550291051
+    second: Infantryman_spritelist_9
+  - first:
+      213: 4756836043132201172
+    second: Infantryman_spritelist_10
+  - first:
+      213: 6784921872215362486
+    second: Infantryman_spritelist_11
+  - first:
+      213: 8725428665186235039
+    second: Infantryman_spritelist_12
+  - first:
+      213: 8926166221711382418
+    second: Infantryman_spritelist_13
+  - first:
+      213: -6408492037466142679
+    second: Infantryman_spritelist_14
+  - first:
+      213: -6569884741690015683
+    second: Infantryman_spritelist_15
+  - first:
+      213: 7085407029596405614
+    second: Infantryman_spritelist_16
+  - first:
+      213: 734084647154917393
+    second: Infantryman_spritelist_17
+  - first:
+      213: 941042161322306878
+    second: Infantryman_spritelist_18
+  - first:
+      213: -2403112468082480401
+    second: Infantryman_spritelist_19
+  - first:
+      213: 1946186011175506695
+    second: Infantryman_spritelist_20
+  - first:
+      213: -1977377508938117897
+    second: Infantryman_spritelist_21
+  - first:
+      213: -2340798695202785720
+    second: Infantryman_spritelist_22
+  - first:
+      213: 4121408916862995895
+    second: Infantryman_spritelist_23
+  - first:
+      213: -4849537186684816010
+    second: Infantryman_spritelist_24
+  - first:
+      213: 8401067689620304082
+    second: Infantryman_spritelist_25
+  - first:
+      213: -606900159885832131
+    second: Infantryman_spritelist_26
+  - first:
+      213: 8728686295953466257
+    second: Infantryman_spritelist_27
+  - first:
+      213: 5107494099081486403
+    second: Infantryman_spritelist_28
+  - first:
+      213: 2092350771570969596
+    second: Infantryman_spritelist_29
+  - first:
+      213: -5381279134843330456
+    second: Infantryman_spritelist_30
+  - first:
+      213: 3036973288136860545
+    second: Infantryman_spritelist_31
+  - first:
+      213: 3954757295068495534
+    second: Infantryman_spritelist_32
+  - first:
+      213: -7838279099361272643
+    second: Infantryman_spritelist_33
+  - first:
+      213: 6097638681730006397
+    second: Infantryman_spritelist_34
+  - first:
+      213: 3373621241256046747
+    second: Infantryman_spritelist_35
+  - first:
+      213: 5369572483432850505
+    second: Infantryman_spritelist_36
+  - first:
+      213: -4693712667968509385
+    second: Infantryman_spritelist_37
+  - first:
+      213: -6772666222964972405
+    second: Infantryman_spritelist_38
+  - first:
+      213: -7604115135678316151
+    second: Infantryman_spritelist_39
+  - first:
+      213: 70037129464546723
+    second: Infantryman_spritelist_40
+  - first:
+      213: 1585361712537159975
+    second: Infantryman_spritelist_41
+  - first:
+      213: 283370885183573403
+    second: Infantryman_spritelist_42
+  - first:
+      213: 2726283028614073306
+    second: Infantryman_spritelist_43
+  - first:
+      213: 1723184993462899476
+    second: Infantryman_spritelist_44
+  - first:
+      213: -6371001160387873550
+    second: Infantryman_spritelist_45
+  - first:
+      213: 5672535031934537367
+    second: Infantryman_spritelist_46
+  - first:
+      213: -784039332808642228
+    second: Infantryman_spritelist_47
+  - first:
+      213: -6599657983121851243
+    second: Infantryman_spritelist_48
+  - first:
+      213: 1138819304416043019
+    second: Infantryman_spritelist_49
+  - first:
+      213: -6633848752370740893
+    second: Infantryman_spritelist_50
+  - first:
+      213: 2492898305038766614
+    second: Infantryman_spritelist_51
+  - first:
+      213: -1402390619955864784
+    second: Infantryman_spritelist_52
+  - first:
+      213: 2435492344280367797
+    second: Infantryman_spritelist_53
+  - first:
+      213: -7558536359126150192
+    second: Infantryman_spritelist_54
+  - first:
+      213: -7230292113176848134
+    second: Infantryman_spritelist_55
+  - first:
+      213: 6500873789853732407
+    second: Infantryman_spritelist_56
+  - first:
+      213: 2217433545643436544
+    second: Infantryman_spritelist_57
+  - first:
+      213: -4150558565749620796
+    second: Infantryman_spritelist_58
+  - first:
+      213: -8776393548334393378
+    second: Infantryman_spritelist_59
+  - first:
+      213: 3830571939885354177
+    second: Infantryman_spritelist_60
+  - first:
+      213: 708329106719730703
+    second: Infantryman_spritelist_61
+  - first:
+      213: -6239060659787167353
+    second: Infantryman_spritelist_62
+  - first:
+      213: -2209690377373659486
+    second: Infantryman_spritelist_63
+  - first:
+      213: 4762527019554498193
+    second: Infantryman_spritelist_64
+  - first:
+      213: -6737828419098635867
+    second: Infantryman_spritelist_65
+  - first:
+      213: 4501242253520267493
+    second: Infantryman_spritelist_66
+  - first:
+      213: -4711984375270935988
+    second: Infantryman_spritelist_67
+  - first:
+      213: -4258590424174751809
+    second: Infantryman_spritelist_68
+  - first:
+      213: -2026999228858464303
+    second: Infantryman_spritelist_69
+  - first:
+      213: -8568547250254907219
+    second: Infantryman_spritelist_70
+  - first:
+      213: -1395522928285553116
+    second: Infantryman_spritelist_71
+  - first:
+      213: 8891867291853977230
+    second: Infantryman_spritelist_72
+  - first:
+      213: -138119978435703713
+    second: Infantryman_spritelist_73
+  - first:
+      213: -8903979236498257076
+    second: Infantryman_spritelist_74
+  - first:
+      213: 3561338694847234566
+    second: Infantryman_spritelist_75
+  - first:
+      213: -7953743057007486306
+    second: Infantryman_spritelist_76
+  - first:
+      213: -1031577171174415851
+    second: Infantryman_spritelist_77
+  - first:
+      213: -7906900361071298714
+    second: Infantryman_spritelist_78
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Infantryman_spritelist_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1153
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d02475dad6fa2ed20800000000000000
+      internalID: 3306397962037838349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_1
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1153
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df11d9de6ae2e31c0800000000000000
+      internalID: -4522125681347456515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_2
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 1153
+        width: 37
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a455d520883bdc990800000000000000
+      internalID: -7364032418944297654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_3
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 1153
+        width: 35
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aeed79f8ec303f10800000000000000
+      internalID: 2247363185373736611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_4
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1153
+        width: 32
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9df72ecd703bd080800000000000000
+      internalID: -9161675700067369570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_5
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1153
+        width: 32
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019af2215c6d2b2e0800000000000000
+      internalID: -2111389133381326576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_6
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1023
+        width: 32
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb91600e9c1de2f50800000000000000
+      internalID: 6858649947508971967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_7
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1023
+        width: 37
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17828c9bf3556bda0800000000000000
+      internalID: -5929458127198476175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_8
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1023
+        width: 43
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfdd7321c8947dc60800000000000000
+      internalID: 7842818142038908413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_9
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 1023
+        width: 32
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595e6c93ed757e390800000000000000
+      internalID: -7789160418550291051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_10
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1081
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d86badad2da30240800000000000000
+      internalID: 4756836043132201172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_11
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1023
+        width: 44
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bbcc26ae72e82e50800000000000000
+      internalID: 6784921872215362486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_12
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1023
+        width: 35
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92bf654423f61970800000000000000
+      internalID: 8725428665186235039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_13
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 895
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2979233c2ec10eb70800000000000000
+      internalID: 8926166221711382418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_14
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 895
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92849e012767017a0800000000000000
+      internalID: -6408492037466142679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_15
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 895
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30ce4cd2a413d4a0800000000000000
+      internalID: -6569884741690015683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_16
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 895
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f3620472c645260800000000000000
+      internalID: 7085407029596405614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_17
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 895
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110acb4e81eff2a00800000000000000
+      internalID: 734084647154917393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_18
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 895
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d28402cd04f0d00800000000000000
+      internalID: 941042161322306878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_19
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 767
+        width: 29
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feaa1a841fd66aed0800000000000000
+      internalID: -2403112468082480401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_20
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 767
+        width: 29
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70353f6addd320b10800000000000000
+      internalID: 1946186011175506695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_21
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 767
+        width: 31
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc85e8d1a1fe84e0800000000000000
+      internalID: -1977377508938117897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_22
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 767
+        width: 29
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8467db12dffc38fd0800000000000000
+      internalID: -2340798695202785720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_23
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 767
+        width: 30
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd0fbfd29f223930800000000000000
+      internalID: 4121408916862995895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_24
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 767
+        width: 32
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675ba966f9bf2bcb0800000000000000
+      internalID: -4849537186684816010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_25
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 639
+        width: 28
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d074dd8d86969470800000000000000
+      internalID: 8401067689620304082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_26
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 639
+        width: 48
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3090e3258bd397f0800000000000000
+      internalID: -606900159885832131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_27
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 639
+        width: 48
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 193602a80f5822970800000000000000
+      internalID: 8728686295953466257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_28
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 639
+        width: 53
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 340e72c82d671e640800000000000000
+      internalID: 5107494099081486403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_29
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 639
+        width: 53
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb8005e0f5890d10800000000000000
+      internalID: 2092350771570969596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_30
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 639
+        width: 53
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860217a532bd155b0800000000000000
+      internalID: -5381279134843330456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_31
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 639
+        width: 53
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1836fbf6d1f752a20800000000000000
+      internalID: 3036973288136860545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_32
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 639
+        width: 53
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eae31718ece12e630800000000000000
+      internalID: 3954757295068495534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_33
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 639
+        width: 57
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbcd33820b6d83390800000000000000
+      internalID: -7838279099361272643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_34
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 639
+        width: 59
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7db239031a2f9450800000000000000
+      internalID: 6097638681730006397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_35
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 639
+        width: 53
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9077cb05a281de20800000000000000
+      internalID: 3373621241256046747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_36
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 693
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9442ab679bd848a40800000000000000
+      internalID: 5369572483432850505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_37
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 689
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a6cf362359cdeb0800000000000000
+      internalID: -4693712667968509385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_38
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 683
+        width: 48
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84e2ed04f7a202a0800000000000000
+      internalID: -6772666222964972405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_39
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 511
+        width: 53
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98109ba8291c87690800000000000000
+      internalID: -7604115135678316151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_40
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 511
+        width: 53
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a582dee562d8f000800000000000000
+      internalID: 70037129464546723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_41
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 511
+        width: 53
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7294844f316500610800000000000000
+      internalID: 1585361712537159975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_42
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 511
+        width: 59
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9d0e07915cbee300800000000000000
+      internalID: 283370885183573403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_43
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 511
+        width: 53
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adbc7b558f3b5d520800000000000000
+      internalID: 2726283028614073306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_44
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 562
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 413d3a92f9bf9e710800000000000000
+      internalID: 1723184993462899476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_45
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 566
+        width: 19
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f4ba7b1338a597a0800000000000000
+      internalID: -6371001160387873550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_46
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 560
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79eca62ae84e8be40800000000000000
+      internalID: 5672535031934537367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_47
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 551
+        width: 12
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c41b10e71688e15f0800000000000000
+      internalID: -784039332808642228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_48
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 383
+        width: 42
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c73f4e70e4964a0800000000000000
+      internalID: -6599657983121851243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_49
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 383
+        width: 39
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b006317af16edcf00800000000000000
+      internalID: 1138819304416043019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_50
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 383
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 361164515b5dfe3a0800000000000000
+      internalID: -6633848752370740893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_51
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 383
+        width: 57
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612520deccd889220800000000000000
+      internalID: 2492898305038766614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_52
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 383
+        width: 63
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03bd03d4925b98ce0800000000000000
+      internalID: -1402390619955864784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_53
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 383
+        width: 62
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2c302226b9cc120800000000000000
+      internalID: 2435492344280367797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_54
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 383
+        width: 59
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3596c6a3faa1790800000000000000
+      internalID: -7558536359126150192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_55
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 383
+        width: 58
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af819cb71a7d8ab90800000000000000
+      internalID: -7230292113176848134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_56
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 383
+        width: 58
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e01edc44eb73a50800000000000000
+      internalID: 6500873789853732407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_57
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 383
+        width: 58
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00aac11bf08e5ce10800000000000000
+      internalID: 2217433545643436544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_58
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 383
+        width: 58
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cff90d99f04666c0800000000000000
+      internalID: -4150558565749620796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_59
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 383
+        width: 58
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed79f7e219cf33680800000000000000
+      internalID: -8776393548334393378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_60
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 383
+        width: 58
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc027352ece82530800000000000000
+      internalID: 3830571939885354177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_61
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 383
+        width: 58
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c6916d19d74d900800000000000000
+      internalID: 708329106719730703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_62
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 383
+        width: 58
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7898549c2676a69a0800000000000000
+      internalID: -6239060659787167353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_63
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 383
+        width: 58
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ae4b092f4a9551e0800000000000000
+      internalID: -2209690377373659486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_64
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 429
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 196eeb16715e71240800000000000000
+      internalID: 4762527019554498193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_65
+      rect:
+        serializedVersion: 2
+        x: 2093
+        y: 383
+        width: 83
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1181a50cc6e72a0800000000000000
+      internalID: -6737828419098635867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_66
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 255
+        width: 55
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e8ed012bff977e30800000000000000
+      internalID: 4501242253520267493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_67
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 255
+        width: 49
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c42f8c40d2bab9eb0800000000000000
+      internalID: -4711984375270935988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_68
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 255
+        width: 59
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf0f2b729276e4c0800000000000000
+      internalID: -4258590424174751809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_69
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 255
+        width: 59
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d786ebd0f6aed3e0800000000000000
+      internalID: -2026999228858464303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_70
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 127
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8f76b8ca7661980800000000000000
+      internalID: -8568547250254907219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_71
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 127
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e60af5a4b12ace0800000000000000
+      internalID: -1395522928285553116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_72
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 127
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86fed8d032466b70800000000000000
+      internalID: 8891867291853977230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_73
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 127
+        width: 47
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c84f48c9c451ef0800000000000000
+      internalID: -138119978435703713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_74
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 166
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4b41194f06be6480800000000000000
+      internalID: -8903979236498257076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_75
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 38
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60209379caa6c6130800000000000000
+      internalID: 3561338694847234566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_76
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 0
+        width: 57
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9ad65494d0ae9190800000000000000
+      internalID: -7953743057007486306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_77
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 0
+        width: 67
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5122fb1470a1fa1f0800000000000000
+      internalID: -1031577171174415851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infantryman_spritelist_78
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 0
+        width: 79
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667ffef930c054290800000000000000
+      internalID: -7906900361071298714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
