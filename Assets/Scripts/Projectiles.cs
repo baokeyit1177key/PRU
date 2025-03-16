@@ -28,6 +28,15 @@ public class Projectiles : MonoBehaviour
         {
             return; // Ignore collision with the player
         }
+        if (collision.CompareTag("Enemy"))
+        {
+            BasicEnemyMap4 enemy = collision.GetComponent<BasicEnemyMap4>();
+            if(enemy != null) 
+            {
+                enemy.TakeDamage(100);
+            }
+            Destroy(gameObject);
+        }
         hit = true;
         boxCollider.enabled = false;
         anim.SetTrigger("hit");

@@ -1,37 +1,37 @@
 fileFormatVersion: 2
-guid: bd79961bdf8a04b4c8fa63e0dc3f6099
+guid: 51f91d46a6cfe7b458576797eb07f339
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1198477067713850731
-    second: Panel_0
+      213: 5827293808285669160
+    second: Mushroom-Attack_0
   - first:
-      213: -3732398871244758080
-    second: Panel_1
+      213: 395788944090898754
+    second: Mushroom-Attack_1
   - first:
-      213: -8823056757382171243
-    second: Panel_2
+      213: -2431859481363569845
+    second: Mushroom-Attack_2
   - first:
-      213: 8172746116404924314
-    second: Panel_3
+      213: 3975243271130314681
+    second: Mushroom-Attack_3
   - first:
-      213: 6009285187920744075
-    second: Panel_4
+      213: -2976413451591195025
+    second: Mushroom-Attack_4
   - first:
-      213: 8513699681585032156
-    second: Panel_5
+      213: -7849148733371855069
+    second: Mushroom-Attack_5
   - first:
-      213: 6411489385799608284
-    second: Panel_6
+      213: 9200555057208211610
+    second: Mushroom-Attack_6
   - first:
-      213: 2563568584272758440
-    second: Panel_7
+      213: 1760042231434011034
+    second: Mushroom-Attack_7
   - first:
-      213: 374194155992635891
-    second: Panel_8
+      213: -8702807064431453006
+    second: Mushroom-Attack_8
   - first:
-      213: -6134325538492735651
-    second: Panel_9
+      213: -827034603758580982
+    second: Mushroom-Attack_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -127,13 +127,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Panel_0
+      name: Mushroom-Attack_0
       rect:
         serializedVersion: 2
-        x: 99
-        y: 1577
-        width: 206
-        height: 50
+        x: 24
+        y: 0
+        width: 32
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 592d67be4772e5fe0800000000000000
-      internalID: -1198477067713850731
+      spriteID: 82753b428d4bed050800000000000000
+      internalID: 5827293808285669160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel_1
+      name: Mushroom-Attack_1
       rect:
         serializedVersion: 2
-        x: 1399
-        y: 1577
-        width: 322
-        height: 50
+        x: 115
+        y: 0
+        width: 31
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c3236f600bd33cc0800000000000000
-      internalID: -3732398871244758080
+      spriteID: 241a09a92ff1e7500800000000000000
+      internalID: 395788944090898754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel_2
+      name: Mushroom-Attack_2
       rect:
         serializedVersion: 2
-        x: 99
-        y: 1367
-        width: 1202
-        height: 162
+        x: 199
+        y: 0
+        width: 36
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 595302f20a43e8580800000000000000
-      internalID: -8823056757382171243
+      spriteID: b43a8adafac404ed0800000000000000
+      internalID: -2431859481363569845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel_3
+      name: Mushroom-Attack_3
       rect:
         serializedVersion: 2
-        x: 1392
-        y: 1032
-        width: 1216
-        height: 497
+        x: 279
+        y: 0
+        width: 36
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9fc4c3ba4d6b6170800000000000000
-      internalID: 8172746116404924314
+      spriteID: 9b7fb7f71b6ea2730800000000000000
+      internalID: 3975243271130314681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel_4
+      name: Mushroom-Attack_4
       rect:
         serializedVersion: 2
-        x: 99
-        y: 1269
-        width: 284
-        height: 50
+        x: 339
+        y: 1
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +230,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8e48043a05456350800000000000000
-      internalID: 6009285187920744075
+      spriteID: f6666394cb7a1b6d0800000000000000
+      internalID: -2976413451591195025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel_5
+      name: Mushroom-Attack_5
       rect:
         serializedVersion: 2
-        x: 92
-        y: 884
-        width: 1216
-        height: 337
+        x: 404
+        y: 0
+        width: 34
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,20 +252,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cdb6b3db0ccb62670800000000000000
-      internalID: 8513699681585032156
+      spriteID: 32fc92640d8321390800000000000000
+      internalID: -7849148733371855069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel_6
+      name: Mushroom-Attack_6
       rect:
         serializedVersion: 2
-        x: 1399
-        y: 949
-        width: 294
-        height: 50
+        x: 483
+        y: 0
+        width: 34
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,20 +274,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd7e5c970af2af850800000000000000
-      internalID: 6411489385799608284
+      spriteID: a98b151f310feaf70800000000000000
+      internalID: 9200555057208211610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel_7
+      name: Mushroom-Attack_7
       rect:
         serializedVersion: 2
-        x: 99
-        y: 801
-        width: 302
-        height: 50
+        x: 562
+        y: 0
+        width: 34
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,20 +296,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a6cde68b00a39320800000000000000
-      internalID: 2563568584272758440
+      spriteID: a916f4a951dec6810800000000000000
+      internalID: 1760042231434011034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel_8
+      name: Mushroom-Attack_8
       rect:
         serializedVersion: 2
-        x: 1392
-        y: 84
-        width: 1216
-        height: 817
+        x: 653
+        y: 2
+        width: 33
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,20 +318,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3f9d7f03a97613500800000000000000
-      internalID: 374194155992635891
+      spriteID: 2bc9dc7951b693780800000000000000
+      internalID: -8702807064431453006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel_9
+      name: Mushroom-Attack_9
       rect:
         serializedVersion: 2
-        x: 91
-        y: 335
-        width: 1218
-        height: 418
+        x: 744
+        y: 0
+        width: 32
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -340,8 +340,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5f988d7c6f7edaa0800000000000000
-      internalID: -6134325538492735651
+      spriteID: a0b8302e868c584f0800000000000000
+      internalID: -827034603758580982
       vertices: []
       indices: 
       edges: []
@@ -359,17 +359,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Panel_0: -1198477067713850731
-      Panel_1: -3732398871244758080
-      Panel_2: -8823056757382171243
-      Panel_3: 8172746116404924314
-      Panel_4: 6009285187920744075
-      Panel_5: 8513699681585032156
-      Panel_6: 6411489385799608284
-      Panel_7: 2563568584272758440
-      Panel_8: 374194155992635891
-      Panel_9: -6134325538492735651
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

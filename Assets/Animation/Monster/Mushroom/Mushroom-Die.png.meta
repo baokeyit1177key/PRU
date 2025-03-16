@@ -1,37 +1,52 @@
 fileFormatVersion: 2
-guid: bd79961bdf8a04b4c8fa63e0dc3f6099
+guid: b2d3a31f070f2344aba20d49ffdc5bcf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1198477067713850731
-    second: Panel_0
+      213: 4880523274685937445
+    second: Mushroom-Die_0
   - first:
-      213: -3732398871244758080
-    second: Panel_1
+      213: 6497299558051612606
+    second: Mushroom-Die_1
   - first:
-      213: -8823056757382171243
-    second: Panel_2
+      213: 1640459993709404721
+    second: Mushroom-Die_2
   - first:
-      213: 8172746116404924314
-    second: Panel_3
+      213: 1620020546130643878
+    second: Mushroom-Die_3
   - first:
-      213: 6009285187920744075
-    second: Panel_4
+      213: -2032438291353025295
+    second: Mushroom-Die_4
   - first:
-      213: 8513699681585032156
-    second: Panel_5
+      213: -4042034173729339270
+    second: Mushroom-Die_5
   - first:
-      213: 6411489385799608284
-    second: Panel_6
+      213: -8632210637703985939
+    second: Mushroom-Die_6
   - first:
-      213: 2563568584272758440
-    second: Panel_7
+      213: 4451060922991824286
+    second: Mushroom-Die_7
   - first:
-      213: 374194155992635891
-    second: Panel_8
+      213: 6405643120833249975
+    second: Mushroom-Die_8
   - first:
-      213: -6134325538492735651
-    second: Panel_9
+      213: 1878989539424652003
+    second: Mushroom-Die_9
+  - first:
+      213: 8520895683359543962
+    second: Mushroom-Die_10
+  - first:
+      213: -6670348678217829923
+    second: Mushroom-Die_11
+  - first:
+      213: -1953191800096732447
+    second: Mushroom-Die_12
+  - first:
+      213: -5784191093614676159
+    second: Mushroom-Die_13
+  - first:
+      213: -9147222279066183815
+    second: Mushroom-Die_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -127,13 +142,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Panel_0
+      name: Mushroom-Die_0
       rect:
         serializedVersion: 2
-        x: 99
-        y: 1577
-        width: 206
-        height: 50
+        x: 24
+        y: 0
+        width: 32
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +157,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 592d67be4772e5fe0800000000000000
-      internalID: -1198477067713850731
+      spriteID: 5277ea96f0a1bb340800000000000000
+      internalID: 4880523274685937445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel_1
+      name: Mushroom-Die_1
       rect:
         serializedVersion: 2
-        x: 1399
-        y: 1577
-        width: 322
-        height: 50
+        x: 106
+        y: 0
+        width: 32
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c3236f600bd33cc0800000000000000
-      internalID: -3732398871244758080
+      spriteID: eb708fc168b0b2a50800000000000000
+      internalID: 6497299558051612606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel_2
+      name: Mushroom-Die_2
       rect:
         serializedVersion: 2
-        x: 99
-        y: 1367
-        width: 1202
-        height: 162
+        x: 192
+        y: 0
+        width: 30
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +201,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 595302f20a43e8580800000000000000
-      internalID: -8823056757382171243
+      spriteID: 132e9493ca514c610800000000000000
+      internalID: 1640459993709404721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel_3
+      name: Mushroom-Die_3
       rect:
         serializedVersion: 2
-        x: 1392
-        y: 1032
-        width: 1216
-        height: 497
+        x: 281
+        y: 0
+        width: 31
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +223,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9fc4c3ba4d6b6170800000000000000
-      internalID: 8172746116404924314
+      spriteID: 6ab83fc7a187b7610800000000000000
+      internalID: 1620020546130643878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel_4
+      name: Mushroom-Die_4
       rect:
         serializedVersion: 2
-        x: 99
-        y: 1269
-        width: 284
-        height: 50
+        x: 350
+        y: 0
+        width: 32
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8e48043a05456350800000000000000
-      internalID: 6009285187920744075
+      spriteID: 1f4400074245bc3e0800000000000000
+      internalID: -2032438291353025295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel_5
+      name: Mushroom-Die_5
       rect:
         serializedVersion: 2
-        x: 92
-        y: 884
-        width: 1216
-        height: 337
+        x: 426
+        y: 0
+        width: 32
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,20 +267,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cdb6b3db0ccb62670800000000000000
-      internalID: 8513699681585032156
+      spriteID: a788fd8a55fc7e7c0800000000000000
+      internalID: -4042034173729339270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel_6
+      name: Mushroom-Die_6
       rect:
         serializedVersion: 2
-        x: 1399
-        y: 949
-        width: 294
-        height: 50
+        x: 499
+        y: 0
+        width: 30
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,20 +289,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd7e5c970af2af850800000000000000
-      internalID: 6411489385799608284
+      spriteID: de44e41192a343880800000000000000
+      internalID: -8632210637703985939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel_7
+      name: Mushroom-Die_7
       rect:
         serializedVersion: 2
-        x: 99
-        y: 801
-        width: 302
-        height: 50
+        x: 569
+        y: 0
+        width: 38
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,20 +311,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a6cde68b00a39320800000000000000
-      internalID: 2563568584272758440
+      spriteID: e9dcc84a35855cd30800000000000000
+      internalID: 4451060922991824286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel_8
+      name: Mushroom-Die_8
       rect:
         serializedVersion: 2
-        x: 1392
-        y: 84
-        width: 1216
-        height: 817
+        x: 647
+        y: 0
+        width: 38
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,20 +333,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3f9d7f03a97613500800000000000000
-      internalID: 374194155992635891
+      spriteID: 7b2c037da7a65e850800000000000000
+      internalID: 6405643120833249975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Panel_9
+      name: Mushroom-Die_9
       rect:
         serializedVersion: 2
-        x: 91
-        y: 335
-        width: 1218
-        height: 418
+        x: 726
+        y: 0
+        width: 36
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -340,8 +355,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5f988d7c6f7edaa0800000000000000
-      internalID: -6134325538492735651
+      spriteID: 3eac412e703831a10800000000000000
+      internalID: 1878989539424652003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom-Die_10
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 0
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a921ec67a7d404670800000000000000
+      internalID: 8520895683359543962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom-Die_11
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 0
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd174dad7392e63a0800000000000000
+      internalID: -6670348678217829923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom-Die_12
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 0
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea4701086ed4e4e0800000000000000
+      internalID: -1953191800096732447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom-Die_13
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 0
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1477e18a8dc6abfa0800000000000000
+      internalID: -5784191093614676159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom-Die_14
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 0
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97798be1dc98e0180800000000000000
+      internalID: -9147222279066183815
       vertices: []
       indices: 
       edges: []
@@ -359,17 +484,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Panel_0: -1198477067713850731
-      Panel_1: -3732398871244758080
-      Panel_2: -8823056757382171243
-      Panel_3: 8172746116404924314
-      Panel_4: 6009285187920744075
-      Panel_5: 8513699681585032156
-      Panel_6: 6411489385799608284
-      Panel_7: 2563568584272758440
-      Panel_8: 374194155992635891
-      Panel_9: -6134325538492735651
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
