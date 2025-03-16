@@ -147,4 +147,14 @@ public class PlayerController : MonoBehaviour
         GameObject projectile = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         projectile.GetComponent<Projectiles>().SetDirection(shootDirection);
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.name == "Trap" || collision.gameObject.name == "Trap (1)" || collision.gameObject.name == "Trap (2)")
+        {
+            // Trừ toàn bộ máu
+            TakeDamage(currentHealth);
+        }
+    }
+    
 }
