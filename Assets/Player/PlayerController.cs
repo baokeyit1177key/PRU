@@ -62,7 +62,6 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && cooldownTimer >= attackCooldown) // Check cooldown before shooting
         {
-            TakeDamage(20);
             Shoot();
             animator.SetTrigger("attack");
             cooldownTimer = 0f; // Reset cooldown
