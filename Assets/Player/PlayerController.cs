@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -19,7 +20,7 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D boxCollider;
     private float horizontalInput;
     public LayerMask groundLayer; // Layer của Ground
-
+    private bool isDead = false;
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -55,7 +56,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Aim();
+        //Aim();
         cooldownTimer += Time.deltaTime; // Update cooldown timer
 
         if (Input.GetMouseButtonDown(0) && cooldownTimer >= attackCooldown) // Check cooldown before shooting
@@ -70,13 +71,34 @@ public class PlayerController : MonoBehaviour
         if (groundCheck != null)
         {
             groundCheck.position = new Vector3(transform.position.x, transform.position.y - 1f, transform.position.z);
-        }
-       
-    }
+        }     
+
+}
     void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+
+    }
+    void Die()
+    {
+        if (isDead) return; // Đảm bảo chỉ chạy 1 lần
+        isDead = true;
+
+        animator.SetTrigger("death"); // Chạy animation chết
+        StartCoroutine(WaitForDeathAnimation());
+    }
+    private IEnumerator WaitForDeathAnimation()
+    {
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+        Application.Quit(); 
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
     void Move()
     {
