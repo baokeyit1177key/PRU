@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     public LayerMask groundLayer; // Layer của Ground
     private bool isDead = false;
+    [SerializeField] private GameManager gameManager;
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -56,14 +57,18 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        //Aim();
+       
         cooldownTimer += Time.deltaTime; // Update cooldown timer
 
         if (Input.GetMouseButtonDown(0) && cooldownTimer >= attackCooldown) // Check cooldown before shooting
         {
-            TakeDamage(20);
             Shoot();
+            animator.SetTrigger("attack");
             cooldownTimer = 0f; // Reset cooldown
+        }
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            gameManager.GamePauseMenu();
         }
         CheckGround(); // Kiểm tra mặt đất
 
@@ -95,10 +100,7 @@ public class PlayerController : MonoBehaviour
     private IEnumerator WaitForDeathAnimation()
     {
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
-        Application.Quit(); 
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#endif
+        gameManager.GameOverMenu();
     }
     void Move()
     {
@@ -139,11 +141,13 @@ public class PlayerController : MonoBehaviour
     }
     void Shoot()
     {
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePosition.z = 0f;
+        StartCoroutine(ShootWithDelay(0.2f));
+    }
+    IEnumerator ShootWithDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
 
-        Vector3 shootDirection = (mousePosition - firePoint.position).normalized; // Get direction to mouse
-
+        Vector3 shootDirection = transform.localScale.x > 0 ? Vector3.right : Vector3.left;
         GameObject projectile = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         projectile.GetComponent<Projectiles>().SetDirection(shootDirection);
     }
