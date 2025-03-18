@@ -22,6 +22,10 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundLayer; // Layer của Ground
     private bool isDead = false;
     [SerializeField] private GameManager gameManager;
+    private bool isInLava = false;
+    [SerializeField] private int lavaDamagePerSecond = 5;
+    private float lavaDamageAccumulator = 0f;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -76,9 +80,13 @@ public class PlayerController : MonoBehaviour
         if (groundCheck != null)
         {
             groundCheck.position = new Vector3(transform.position.x, transform.position.y - 1f, transform.position.z);
-        }     
+        }
+        if (isInLava)
+    {
+        ApplyLavaDamage();
+    }
 
-}
+    }
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
@@ -159,6 +167,31 @@ public class PlayerController : MonoBehaviour
             // Trừ toàn bộ máu
             TakeDamage(currentHealth);
         }
+        if (collision.gameObject.CompareTag("Lava"))
+        {
+            isInLava = true;
+        }
     }
-    
+    private void ApplyLavaDamage()
+    {
+        // Cộng dồn thời gian
+        lavaDamageAccumulator += Time.deltaTime;
+
+        // Nếu đã tích lũy đủ 0.2 giây (1/5 giây)
+        if (lavaDamageAccumulator >= 0.2f)
+        {
+            // Gây 1 damage
+            TakeDamage(1);
+
+            // Trừ thời gian tích lũy đi 0.2 giây
+            lavaDamageAccumulator -= 0.2f;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Lava"))
+        {
+            isInLava = false;
+        }
+    }
 }
