@@ -2651,8 +2651,8 @@ Transform:
   m_GameObject: {fileID: 1467819850}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 86.81, y: 53.9, z: -8.754383}
-  m_LocalScale: {x: 3.6382475, y: 3.1158714, z: 1}
+  m_LocalPosition: {x: 84.9, y: 53.8, z: -8.754383}
+  m_LocalScale: {x: 3.638247, y: 3.1158714, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -3425,6 +3425,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   gameManager: {fileID: 918245421}
+  lavaDamagePerSecond: 5
 --- !u!50 &1807105453
 Rigidbody2D:
   serializedVersion: 5
