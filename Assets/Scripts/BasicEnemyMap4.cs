@@ -19,6 +19,7 @@ public abstract class BasicEnemyMap4 : MonoBehaviour
     private BoxCollider2D boxCollider;
     private Rigidbody2D rb;
     private Vector3 originalScale;
+    private bool isHit = false;
 
     private void Awake()
     {
@@ -74,7 +75,7 @@ public abstract class BasicEnemyMap4 : MonoBehaviour
                 }
             }         
         }
-       else animator.SetBool("IsRunning", true);
+       else animator.SetBool("IsRunning", false);
         HandleAttackCooldown();
     }
     private bool isGrounded()
@@ -117,13 +118,9 @@ public abstract class BasicEnemyMap4 : MonoBehaviour
             float moveDirection = player.transform.position.x - transform.position.x;
 
             // Flip only if the enemy is actually moving left or right
-            if (Mathf.Abs(moveDirection) > 0.1f)
+            if ((moveDirection > 0 && transform.localScale.x > 0) || (moveDirection < 0 && transform.localScale.x < 0))
             {
-                transform.localScale = new Vector3(
-            (moveDirection < 0 ? 1 : -1) * originalScale.x,
-            originalScale.y,
-            originalScale.z
-            );
+                transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
             }
         }
     }
@@ -162,7 +159,7 @@ public abstract class BasicEnemyMap4 : MonoBehaviour
     {
         enemyHealth -= damage;
         Debug.Log(gameObject.name + " took " + damage + " damage! HP: " + enemyHealth);
-
+        animator.SetTrigger("isHit");
         if (enemyHealth <= 0)
         {
             Die();

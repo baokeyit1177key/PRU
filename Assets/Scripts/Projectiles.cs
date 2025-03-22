@@ -8,18 +8,20 @@ public class Projectiles : MonoBehaviour
     private Vector2 direction;
     private Animator anim;
     private BoxCollider2D boxCollider;
+    private Rigidbody2D rigidbody;
     public PlayerController player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+        rigidbody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (hit) return;
+        if (hit && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1) Destroy(gameObject);
         transform.position += (Vector3)(direction * speed * Time.deltaTime);
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,16 +34,16 @@ public class Projectiles : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             BasicEnemyMap4 enemy = collision.GetComponent<BasicEnemyMap4>();
-            if(enemy != null) 
+            if (enemy != null) 
             {
                 enemy.TakeDamage(player.damage);
+                hit = true;
+                anim.SetTrigger("hit");
+                rigidbody.linearVelocity = Vector2.zero;
             }
-            Destroy(gameObject);
         }
         hit = true;
-        boxCollider.enabled = false;
-        anim.SetTrigger("hit");
-        Invoke("Deactivate", 0.5f);
+        boxCollider.enabled = false;       
     }
     public void SetDirection(Vector2 _direction)
     {
@@ -54,8 +56,8 @@ public class Projectiles : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle);
     }
-    private void Deactivate()
+    public void DestroyAfterAnimation()
     {
-        gameObject.SetActive(false);
+        Destroy(gameObject); 
     }
 }

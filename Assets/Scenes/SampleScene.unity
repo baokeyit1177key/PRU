@@ -1413,7 +1413,7 @@ GameObject:
   - component: {fileID: 452733134}
   m_Layer: 7
   m_Name: Arrow
-  m_TagString: Untagged
+  m_TagString: Projectiles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1431,6 +1431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  player: {fileID: 1807105452}
 --- !u!95 &452733135
 Animator:
   serializedVersion: 7
@@ -1476,9 +1477,9 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &452733137
 BoxCollider2D:
@@ -4215,7 +4216,7 @@ GameObject:
   - component: {fileID: 1467819855}
   - component: {fileID: 1467819856}
   - component: {fileID: 1467819857}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mushroom mob
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -5957,7 +5958,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 85871723}
         m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
-        m_MethodName: StartGame
+        m_MethodName: RetryGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
