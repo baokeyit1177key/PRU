@@ -286,16 +286,18 @@ public class DepstroyEnemyMap4 : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        Debug.Log("Taking damage: " + damage);
         if (isDead) return;
 
         currentHealth -= damage;
+        Debug.Log("Current health: " + currentHealth);
 
         if (currentHealth <= 0)
         {
+            Debug.Log("Should die now, health <= 0");
             Die();
         }
     }
-
     private void Die()
     {
         isDead = true;
@@ -341,7 +343,7 @@ public class DepstroyEnemyMap4 : MonoBehaviour
     }
 }
 
-// Add this script to your bullet prefab
+
 public class BulletController : MonoBehaviour
 {
     public int damage = 8;
