@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int lavaDamagePerSecond = 5;
     private float lavaDamageAccumulator = 0f;
     public int statPoints;
+    // Thêm vào class PlayerController
+    [SerializeField] private int attackDamage = 20; // Sát thương cơ bản, có thể điều chỉnh trong Inspector
+    public int AttackDamage { get { return attackDamage; } set { attackDamage = value; } }
 
     private void Awake()
     {
