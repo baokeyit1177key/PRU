@@ -62,6 +62,11 @@ public class Projectiles : MonoBehaviour
             {
                 depstroyEnemy.TakeDamage(damage); // Sử dụng biến damage thay vì giá trị cố định
             }
+            RangedEnemyController rangedEnemy = collision.GetComponent<RangedEnemyController>();
+            if (rangedEnemy != null)
+            {
+                rangedEnemy.TakeDamage(damage);
+            }
         }
 
         hit = true;

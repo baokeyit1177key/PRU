@@ -1,31 +1,25 @@
 fileFormatVersion: 2
-guid: f0bc3e024df3b0f4db793a7d6d4645a3
+guid: 66e7e19f863b47e4d938f5a55ecafd3e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3475422345579652110
-    second: Shot_2_0
+      213: -5626403112567742322
+    second: Shutdown 1_0
   - first:
-      213: 3520884120067233990
-    second: Shot_2_1
+      213: 348908740885750993
+    second: Shutdown 1_1
   - first:
-      213: -5474759450979170867
-    second: Shot_2_2
+      213: -2948079220586451419
+    second: Shutdown 1_2
   - first:
-      213: 509054399034450440
-    second: Shot_2_3
+      213: 1386428714225424405
+    second: Shutdown 1_3
   - first:
-      213: 5224661902524679087
-    second: Shot_2_4
+      213: 8388304260120195957
+    second: Shutdown 1_4
   - first:
-      213: -796455228157451001
-    second: Shot_2_5
-  - first:
-      213: -1641753801054357806
-    second: Shot_2_6
-  - first:
-      213: -3422644429672023562
-    second: Shot_2_7
+      213: -5079487967592615905
+    second: Shutdown 1_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shot_2_0
+      name: Shutdown 1_0
       rect:
         serializedVersion: 2
-        x: 50
+        x: 48
         y: 0
-        width: 28
-        height: 79
+        width: 38
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2fb154f4ac1d4cfc0800000000000000
-      internalID: -3475422345579652110
+      spriteID: e806f38dd200be1b0800000000000000
+      internalID: -5626403112567742322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shot_2_1
+      name: Shutdown 1_1
       rect:
         serializedVersion: 2
-        x: 178
+        x: 176
         y: 0
-        width: 44
-        height: 79
+        width: 38
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c8dbe7e371bcd030800000000000000
-      internalID: 3520884120067233990
+      spriteID: 1d42687b6a297d400800000000000000
+      internalID: 348908740885750993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shot_2_2
+      name: Shutdown 1_2
       rect:
         serializedVersion: 2
-        x: 306
+        x: 304
         y: 0
-        width: 50
-        height: 79
+        width: 37
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc58cad294fb504b0800000000000000
-      internalID: -5474759450979170867
+      spriteID: 52eeb3781915617d0800000000000000
+      internalID: -2948079220586451419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shot_2_3
+      name: Shutdown 1_3
       rect:
         serializedVersion: 2
-        x: 434
+        x: 432
         y: 0
-        width: 53
-        height: 79
+        width: 35
+        height: 73
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8026cc16746801700800000000000000
-      internalID: 509054399034450440
+      spriteID: 518dec9e1959d3310800000000000000
+      internalID: 1386428714225424405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shot_2_4
+      name: Shutdown 1_4
       rect:
         serializedVersion: 2
-        x: 562
+        x: 560
         y: 0
-        width: 56
-        height: 79
+        width: 32
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa30083a15ab18840800000000000000
-      internalID: 5224661902524679087
+      spriteID: 5733c5c084e396470800000000000000
+      internalID: 8388304260120195957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shot_2_5
+      name: Shutdown 1_5
       rect:
         serializedVersion: 2
-        x: 690
+        x: 688
         y: 0
-        width: 60
-        height: 79
+        width: 32
+        height: 78
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,52 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7052c26903c62f4f0800000000000000
-      internalID: -796455228157451001
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shot_2_6
-      rect:
-        serializedVersion: 2
-        x: 818
-        y: 0
-        width: 61
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2d6f187cd915739e0800000000000000
-      internalID: -1641753801054357806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shot_2_7
-      rect:
-        serializedVersion: 2
-        x: 946
-        y: 0
-        width: 53
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6f9fde076035080d0800000000000000
-      internalID: -3422644429672023562
+      spriteID: f1075c21b980289b0800000000000000
+      internalID: -5079487967592615905
       vertices: []
       indices: 
       edges: []
@@ -309,15 +259,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Shot_2_0: -3475422345579652110
-      Shot_2_1: 3520884120067233990
-      Shot_2_2: -5474759450979170867
-      Shot_2_3: 509054399034450440
-      Shot_2_4: 5224661902524679087
-      Shot_2_5: -796455228157451001
-      Shot_2_6: -1641753801054357806
-      Shot_2_7: -3422644429672023562
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
