@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject mainMenu;
     [SerializeField] private GameObject gameOverMenu;
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private UpgradeMenu upgradeMenu;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,6 +24,7 @@ public class GameManager : MonoBehaviour
         mainMenu.SetActive(true);
         gameOverMenu.SetActive(false);
         pauseMenu.SetActive(false);
+        upgradeMenu.Hide();
         Time.timeScale = 0f;
     }
     public void GameOverMenu()
@@ -29,6 +32,7 @@ public class GameManager : MonoBehaviour
         gameOverMenu.SetActive(true);
         mainMenu.SetActive(false);
         pauseMenu.SetActive(false);
+        upgradeMenu.Hide();
         Time.timeScale = 0f;
     }
     public void GamePauseMenu()
@@ -36,6 +40,7 @@ public class GameManager : MonoBehaviour
         pauseMenu.SetActive(true);
         mainMenu.SetActive(false);
         gameOverMenu.SetActive(false);
+        upgradeMenu.Hide();
         Time.timeScale = 0f;
     }
     public void StartGame()
@@ -43,6 +48,7 @@ public class GameManager : MonoBehaviour
        pauseMenu.SetActive(false);
         mainMenu.SetActive(false);
         gameOverMenu.SetActive(false);
+        upgradeMenu.Hide();
         Time.timeScale = 1f;
     }
     public void ResumeGame()
@@ -50,7 +56,16 @@ public class GameManager : MonoBehaviour
        pauseMenu.SetActive(false);
         mainMenu.SetActive(false);
         gameOverMenu.SetActive(false);
+        upgradeMenu.Hide();
         Time.timeScale = 1f;
     }
-
+    public void RetryGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void CompleteMap()
+    {
+        upgradeMenu.ShowUpgradeMenu();
+        Time.timeScale = 0f;
+    }
 }

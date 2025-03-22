@@ -8,6 +8,7 @@ public class Projectiles : MonoBehaviour
     private Vector2 direction;
     private Animator anim;
     private BoxCollider2D boxCollider;
+    public PlayerController player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
@@ -33,7 +34,7 @@ public class Projectiles : MonoBehaviour
             BasicEnemyMap4 enemy = collision.GetComponent<BasicEnemyMap4>();
             if(enemy != null) 
             {
-                enemy.TakeDamage(100);
+                enemy.TakeDamage(player.damage);
             }
             Destroy(gameObject);
         }

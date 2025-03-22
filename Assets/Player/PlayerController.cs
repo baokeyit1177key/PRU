@@ -6,9 +6,10 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce = 8f;
     public GameObject bulletPrefab;
-    private int maxHealth = 100;
+    public int maxHealth = 100;
+    public int damage = 10;
     public HealthBar healthBar;
-    private int currentHealth;
+    public int currentHealth;
     private Rigidbody2D rb;
     [SerializeField] private Transform firePoint;
     private int jumpCount = 2; // Nhảy tối đa 2 lần
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
     private bool isInLava = false;
     [SerializeField] private int lavaDamagePerSecond = 5;
     private float lavaDamageAccumulator = 0f;
+    public int statPoints;
 
     private void Awake()
     {
@@ -73,6 +75,10 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKey(KeyCode.Escape))
         {
             gameManager.GamePauseMenu();
+        } 
+        if(Input.GetKey(KeyCode.Z))
+        {           
+            gameManager.CompleteMap();
         }
         CheckGround(); // Kiểm tra mặt đất
 

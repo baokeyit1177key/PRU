@@ -145,6 +145,7 @@ public abstract class BasicEnemyMap4 : MonoBehaviour
     {
         if (canAttack)
         {
+            PerformAttack();
             animator.SetTrigger("Attack");
             canAttack = false;
             cooldownTimer = 0f;

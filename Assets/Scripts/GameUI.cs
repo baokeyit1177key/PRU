@@ -15,6 +15,10 @@ public class GameUI : MonoBehaviour
     public void ContinueGame()
     {
         gameManager.ResumeGame();
+    } 
+    public void RetryGame()
+    {
+        gameManager.RetryGame();
     }
     public void MainMenu()
     {
