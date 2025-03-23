@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: 0c7a629d73dc10d4f995a37ef515a036
+guid: 670c960d4a897a2498104ea7cebfa759
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2276772264460779712
-    second: Attack_4_0
+      213: 3792426379425932766
+    second: Dead 2_0
   - first:
-      213: -7739544595202240007
-    second: Attack_4_1
+      213: -2315099066032404634
+    second: Dead 2_1
   - first:
-      213: 124788761927723464
-    second: Attack_4_2
+      213: -4888235268606460570
+    second: Dead 2_2
   - first:
-      213: -3177403811815403217
-    second: Attack_4_3
+      213: 4022671128471846613
+    second: Dead 2_3
+  - first:
+      213: -3334307176221877346
+    second: Dead 2_4
+  - first:
+      213: -2804995472763055640
+    second: Dead 2_5
+  - first:
+      213: -1606111006399345485
+    second: Dead 2_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack_4_0
+      name: Dead 2_0
       rect:
         serializedVersion: 2
-        x: 42
+        x: 0
         y: 0
-        width: 55
-        height: 73
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 04f7a5630b74760e0800000000000000
-      internalID: -2276772264460779712
+      spriteID: ed5e08ee2b761a430800000000000000
+      internalID: 3792426379425932766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_4_1
+      name: Dead 2_1
       rect:
         serializedVersion: 2
-        x: 170
+        x: 128
         y: 0
-        width: 49
-        height: 73
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f11daf423d979490800000000000000
-      internalID: -7739544595202240007
+      spriteID: 667cc455aad1fdfd0800000000000000
+      internalID: -2315099066032404634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_4_2
+      name: Dead 2_2
       rect:
         serializedVersion: 2
-        x: 300
+        x: 256
         y: 0
-        width: 59
-        height: 73
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c9a9a2c7b65bb100800000000000000
-      internalID: 124788761927723464
+      spriteID: 66dfc241cef792cb0800000000000000
+      internalID: -4888235268606460570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_4_3
+      name: Dead 2_3
       rect:
         serializedVersion: 2
-        x: 429
+        x: 384
         y: 0
-        width: 59
-        height: 73
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +199,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f2155c8511897e3d0800000000000000
-      internalID: -3177403811815403217
+      spriteID: 5deb8cc041663d730800000000000000
+      internalID: 4022671128471846613
       vertices: []
       indices: 
       edges: []
@@ -200,7 +209,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6b8b7368b9def514eaac4a6773ad479d
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +219,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Attack_4_0: -2276772264460779712
-      Attack_4_1: -7739544595202240007
-      Attack_4_2: 124788761927723464
-      Attack_4_3: -3177403811815403217
+      Dead 2_0: 3792426379425932766
+      Dead 2_1: -2315099066032404634
+      Dead 2_2: -4888235268606460570
+      Dead 2_3: 4022671128471846613
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

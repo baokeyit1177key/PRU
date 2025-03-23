@@ -53,19 +53,24 @@ public class Projectiles : MonoBehaviour
             BasicEnemyMap4 basicEnemy = collision.GetComponent<BasicEnemyMap4>();
             if (basicEnemy != null)
             {
-                basicEnemy.TakeDamage(damage); // Sử dụng biến damage thay vì giá trị cố định
+                basicEnemy.TakeDamage(damage);
             }
 
             // Kiểm tra DepstroyEnemyMap4
             DepstroyEnemyMap4 depstroyEnemy = collision.GetComponent<DepstroyEnemyMap4>();
             if (depstroyEnemy != null)
             {
-                depstroyEnemy.TakeDamage(damage); // Sử dụng biến damage thay vì giá trị cố định
+                depstroyEnemy.TakeDamage(damage); 
             }
             RangedEnemyController rangedEnemy = collision.GetComponent<RangedEnemyController>();
             if (rangedEnemy != null)
             {
                 rangedEnemy.TakeDamage(damage);
+            }
+            Enemy3Controller enemy3 = collision.GetComponent<Enemy3Controller>();
+            if (enemy3 != null)
+            {
+                enemy3.TakeDamage(damage);
             }
         }
 

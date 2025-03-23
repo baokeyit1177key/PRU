@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 0c7a629d73dc10d4f995a37ef515a036
+guid: c34b1883270edd640990fa17ca2148a6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2276772264460779712
-    second: Attack_4_0
+      213: -806905076886345937
+    second: Attack_6_0
   - first:
-      213: -7739544595202240007
-    second: Attack_4_1
+      213: 2572921607139362867
+    second: Attack_6_1
   - first:
-      213: 124788761927723464
-    second: Attack_4_2
+      213: 8349597917677353817
+    second: Attack_6_2
   - first:
-      213: -3177403811815403217
-    second: Attack_4_3
+      213: -4440793213940028715
+    second: Attack_6_3
+  - first:
+      213: -3019648237327054326
+    second: Attack_6_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,89 +112,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack_4_0
+      name: Attack_6_0
       rect:
         serializedVersion: 2
-        x: 42
+        x: 0
         y: 0
-        width: 55
-        height: 73
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 04f7a5630b74760e0800000000000000
-      internalID: -2276772264460779712
+      spriteID: 741a23df39703c04bae8b6a49297ab6b
+      internalID: -84463922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_4_1
+      name: Attack_6_1
       rect:
         serializedVersion: 2
-        x: 170
+        x: 128
         y: 0
-        width: 49
-        height: 73
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9f11daf423d979490800000000000000
-      internalID: -7739544595202240007
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack_4_2
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 0
-        width: 59
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8c9a9a2c7b65bb100800000000000000
-      internalID: 124788761927723464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack_4_3
-      rect:
-        serializedVersion: 2
-        x: 429
-        y: 0
-        width: 59
-        height: 73
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f2155c8511897e3d0800000000000000
-      internalID: -3177403811815403217
+      spriteID: 3ca39d49ab1c0e64198412aa95995db3
+      internalID: 701617233
       vertices: []
       indices: 
       edges: []
@@ -200,7 +159,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9f1e4a8321cd2964d8524d4ba721b46a
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +169,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Attack_4_0: -2276772264460779712
-      Attack_4_1: -7739544595202240007
-      Attack_4_2: 124788761927723464
-      Attack_4_3: -3177403811815403217
+      Attack_6_0: -84463922
+      Attack_6_1: 701617233
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
