@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 0c7a629d73dc10d4f995a37ef515a036
+guid: 9cf3d63cd541ca3469ea4cb484fff424
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2276772264460779712
-    second: Attack_4_0
+      213: 2876879848000553018
+    second: Shutdown 2_0
   - first:
-      213: -7739544595202240007
-    second: Attack_4_1
+      213: 2585090846891085051
+    second: Shutdown 2_1
   - first:
-      213: 124788761927723464
-    second: Attack_4_2
+      213: 6105719184155235361
+    second: Shutdown 2_2
   - first:
-      213: -3177403811815403217
-    second: Attack_4_3
+      213: 8576865970168051367
+    second: Shutdown 2_3
+  - first:
+      213: -1593542725463175360
+    second: Shutdown 2_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack_4_0
+      name: Shutdown 2_0
       rect:
         serializedVersion: 2
-        x: 42
+        x: 20
         y: 0
-        width: 55
-        height: 73
+        width: 78
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 04f7a5630b74760e0800000000000000
-      internalID: -2276772264460779712
+      spriteID: a308d89bafabce720800000000000000
+      internalID: 2876879848000553018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_4_1
+      name: Shutdown 2_1
       rect:
         serializedVersion: 2
-        x: 170
+        x: 149
         y: 0
-        width: 49
-        height: 73
+        width: 76
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f11daf423d979490800000000000000
-      internalID: -7739544595202240007
+      spriteID: bfc8e09cd6610e320800000000000000
+      internalID: 2585090846891085051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_4_2
+      name: Shutdown 2_2
       rect:
         serializedVersion: 2
-        x: 300
+        x: 290
         y: 0
-        width: 59
-        height: 73
+        width: 52
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c9a9a2c7b65bb100800000000000000
-      internalID: 124788761927723464
+      spriteID: 1245cdd9f3fdbb450800000000000000
+      internalID: 6105719184155235361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack_4_3
+      name: Shutdown 2_3
       rect:
         serializedVersion: 2
-        x: 429
+        x: 421
         y: 0
-        width: 59
-        height: 73
+        width: 40
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +193,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f2155c8511897e3d0800000000000000
-      internalID: -3177403811815403217
+      spriteID: 7a6b00e5826270770800000000000000
+      internalID: 8576865970168051367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shutdown 2_4
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 0
+        width: 34
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f0c5a855992e9e0800000000000000
+      internalID: -1593542725463175360
       vertices: []
       indices: 
       edges: []
@@ -209,11 +234,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Attack_4_0: -2276772264460779712
-      Attack_4_1: -7739544595202240007
-      Attack_4_2: 124788761927723464
-      Attack_4_3: -3177403811815403217
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
