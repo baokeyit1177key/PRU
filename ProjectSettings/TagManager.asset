@@ -11,6 +11,7 @@ TagManager:
   - Projectiles
   - Enemy_2
   - Enemy_3
+  - EnemyProjectiles
   layers:
   - Default
   - TransparentFX

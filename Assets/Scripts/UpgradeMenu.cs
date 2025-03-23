@@ -49,7 +49,7 @@ public class UpgradeMenu : MonoBehaviour
     }
     private void UpgradeStat(string statType)
     {
-        if (player.statPoints > 0)
+        if (tempStatPoints > 0)
         {
             switch (statType)
             {

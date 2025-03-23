@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public abstract class BasicEnemyMap4 : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public abstract class BasicEnemyMap4 : MonoBehaviour
     [SerializeField] protected float attackCooldown = 2f;
     [SerializeField] protected int maxHealth = 100;   
     protected int enemyHealth;                        
-    [SerializeField] protected int attackDamage = 10;
+    [SerializeField] public int attackDamage = 10;
     protected PlayerController player;
     [SerializeField] private LayerMask groundLayer;
     protected bool playerDetected = false;
@@ -118,7 +119,7 @@ public abstract class BasicEnemyMap4 : MonoBehaviour
             float moveDirection = player.transform.position.x - transform.position.x;
 
             // Flip only if the enemy is actually moving left or right
-            if ((moveDirection > 0 && transform.localScale.x > 0) || (moveDirection < 0 && transform.localScale.x < 0))
+            if ((moveDirection > 0 && transform.localScale.x < 0) || (moveDirection < 0 && transform.localScale.x > 0))
             {
                 transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
             }
@@ -162,13 +163,14 @@ public abstract class BasicEnemyMap4 : MonoBehaviour
         animator.SetTrigger("isHit");
         if (enemyHealth <= 0)
         {
-            Die();
+            StartCoroutine(HandleDeath());
         }
     }
-
-    protected virtual void Die()
+    protected virtual IEnumerator HandleDeath()
     {
         Debug.Log(gameObject.name + " has died!");
+        animator.SetTrigger("Death");
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
         Destroy(gameObject);
     }
     private void OnCollisionEnter2D(Collision2D collision)

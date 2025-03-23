@@ -20,16 +20,6 @@ public class Projectiles : MonoBehaviour
     // Thêm phương thức để nhận sát thương từ Player
     private void Start()
     {
-        // Tìm Player và lấy sát thương
-        PlayerController player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-        if (player != null)
-        {
-            damage = player.AttackDamage;
-        }
-        else
-        {
-            damage = 20; // Sát thương mặc định nếu không tìm thấy Player
-        }
     }
 
     // Update is called once per frame
