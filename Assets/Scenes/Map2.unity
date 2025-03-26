@@ -1074,6 +1074,7 @@ GameObject:
   - component: {fileID: 222129277}
   - component: {fileID: 222129276}
   - component: {fileID: 222129275}
+  - component: {fileID: 222129280}
   m_Layer: 0
   m_Name: BasisEnemy_2
   m_TagString: Enemy_2
@@ -1240,12 +1241,32 @@ Transform:
   m_GameObject: {fileID: 222129274}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.84, y: 2.12, z: 0}
+  m_LocalPosition: {x: 5.05, y: -15.66, z: 0}
   m_LocalScale: {x: 0.304371, y: 0.27632675, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &222129280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222129274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12da69809e2f7be47aacb71763cd4636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  detectionRange: 5
+  attackRange: 1.2
+  attackCooldown: 1.5
+  damage: 10
+  maxHealth: 60
+  shieldDuration: 1
+  attackDuration: 0.35
 --- !u!1 &234334649
 GameObject:
   m_ObjectHideFlags: 0
@@ -1785,6 +1806,7 @@ GameObject:
   - component: {fileID: 544273597}
   - component: {fileID: 544273596}
   - component: {fileID: 544273595}
+  - component: {fileID: 544273600}
   m_Layer: 0
   m_Name: BasisEnemy_3
   m_TagString: Enemy_3
@@ -1957,6 +1979,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &544273600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544273594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12da69809e2f7be47aacb71763cd4636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  detectionRange: 5
+  attackRange: 1.2
+  attackCooldown: 0.5
+  damage: 15
+  maxHealth: 100
+  shieldDuration: 1
+  attackDuration: 0.05
 --- !u!1 &570995989
 GameObject:
   m_ObjectHideFlags: 0
@@ -2825,7 +2867,7 @@ Transform:
   m_GameObject: {fileID: 1264471475}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.535, y: -18.7569, z: 0}
+  m_LocalPosition: {x: 16.6, y: -25.6, z: 0}
   m_LocalScale: {x: 6.225924, y: 6.0795207, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3231,16 +3273,17 @@ MonoBehaviour:
   moveSpeed: 5
   jumpForce: 8
   bulletPrefab: {fileID: 39036380}
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 1267481452}
   firePoint: {fileID: 234334650}
   attackCooldown: 0.1
-  groundCheck: {fileID: 0}
+  groundCheck: {fileID: 1753474064}
   groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
   gameManager: {fileID: 277659119}
   lavaDamagePerSecond: 5
+  attackDamage: 20
 --- !u!95 &1291465618
 Animator:
   serializedVersion: 7
@@ -3327,7 +3370,7 @@ Transform:
   m_GameObject: {fileID: 1291465610}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.44, y: 1.47, z: 0}
+  m_LocalPosition: {x: 14.7, y: -11.37, z: 0}
   m_LocalScale: {x: 1.2934, y: 1.2367, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -33826,6 +33869,7 @@ GameObject:
   - component: {fileID: 1816195118}
   - component: {fileID: 1816195117}
   - component: {fileID: 1816195116}
+  - component: {fileID: 1816195121}
   m_Layer: 0
   m_Name: BasisEnemy
   m_TagString: Enemy
@@ -33992,12 +34036,32 @@ Transform:
   m_GameObject: {fileID: 1816195114}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.3661, y: 2.0681, z: 0}
+  m_LocalPosition: {x: 18.05, y: -3.84, z: 0}
   m_LocalScale: {x: 0.321825, y: 0.2604476, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1816195121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816195114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12da69809e2f7be47aacb71763cd4636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  detectionRange: 5
+  attackRange: 1.2
+  attackCooldown: 1.5
+  damage: 8
+  maxHealth: 80
+  shieldDuration: 1
+  attackDuration: 0.4
 --- !u!1 &1953606893
 GameObject:
   m_ObjectHideFlags: 0
