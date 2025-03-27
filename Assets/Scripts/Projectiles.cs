@@ -1,5 +1,4 @@
-using UnityEngine;
-using UnityEngine.EventSystems;
+﻿using UnityEngine;
 
 public class Projectiles : MonoBehaviour
 {
@@ -8,6 +7,7 @@ public class Projectiles : MonoBehaviour
     private Vector2 direction;
     private Animator anim;
     private BoxCollider2D boxCollider;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
@@ -21,27 +21,33 @@ public class Projectiles : MonoBehaviour
         if (hit) return;
         transform.position += (Vector3)(direction * speed * Time.deltaTime);
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Hit: " + collision.gameObject.name);
+
         if (collision.CompareTag("Player") || collision.CompareTag("Projectiles"))
         {
-            return; // Ignore collision with the player
+            return; // Ignore collision with the player or other projectiles
         }
+
         if (collision.CompareTag("Enemy"))
         {
+            // Giảm máu của đối thủ bằng 20
             BasicEnemyMap4 enemy = collision.GetComponent<BasicEnemyMap4>();
-            if(enemy != null) 
+            if (enemy != null)
             {
-                enemy.TakeDamage(100);
+                enemy.TakeDamage(20); // Đã chỉnh sửa để gây damage 20
             }
-            Destroy(gameObject);
+            Destroy(gameObject); // Xóa mũi tên sau khi trúng đối thủ
         }
+
         hit = true;
         boxCollider.enabled = false;
         anim.SetTrigger("hit");
         Invoke("Deactivate", 0.5f);
     }
+
     public void SetDirection(Vector2 _direction)
     {
         direction = _direction.normalized; // Ensure direction is normalized
@@ -53,6 +59,7 @@ public class Projectiles : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle);
     }
+
     private void Deactivate()
     {
         gameObject.SetActive(false);

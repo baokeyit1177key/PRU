@@ -26,6 +26,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int lavaDamagePerSecond = 5;
     private float lavaDamageAccumulator = 0f;
 
+    // Thêm biến để theo dõi chạm vào "C1M1"
+    private bool isTouchingC1M1 = false;
+    private float c1m1DamageAccumulator = 0f;
+    [SerializeField] private float c1m1DamageInterval = 1f; // Thời gian giữa các lần trừ máu (giây)
+    [SerializeField] private int c1m1DamageAmount = 20; // Số máu bị trừ mỗi lần
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -61,7 +67,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-       
         cooldownTimer += Time.deltaTime; // Update cooldown timer
 
         if (Input.GetMouseButtonDown(0) && cooldownTimer >= attackCooldown) // Check cooldown before shooting
@@ -70,7 +75,7 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger("attack");
             cooldownTimer = 0f; // Reset cooldown
         }
-        if(Input.GetKey(KeyCode.Escape))
+        if (Input.GetKey(KeyCode.Escape))
         {
             gameManager.GamePauseMenu();
         }
@@ -82,11 +87,23 @@ public class PlayerController : MonoBehaviour
             groundCheck.position = new Vector3(transform.position.x, transform.position.y - 1f, transform.position.z);
         }
         if (isInLava)
-    {
-        ApplyLavaDamage();
+        {
+            ApplyLavaDamage();
+        }
+
+        // Nếu đang chạm vào "C1M1", trừ máu liên tục
+        if (isTouchingC1M1)
+        {
+            c1m1DamageAccumulator += Time.deltaTime;
+
+            if (c1m1DamageAccumulator >= c1m1DamageInterval)
+            {
+                TakeDamage(c1m1DamageAmount);
+                c1m1DamageAccumulator = 0f; // Reset thời gian tích lũy
+            }
+        }
     }
 
-    }
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
@@ -95,8 +112,8 @@ public class PlayerController : MonoBehaviour
         {
             Die();
         }
-
     }
+
     void Die()
     {
         if (isDead) return; // Đảm bảo chỉ chạy 1 lần
@@ -105,11 +122,13 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("death"); // Chạy animation chết
         StartCoroutine(WaitForDeathAnimation());
     }
+
     private IEnumerator WaitForDeathAnimation()
     {
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
         gameManager.GameOverMenu();
     }
+
     void Move()
     {
         float moveX = Input.GetAxisRaw("Horizontal");
@@ -126,7 +145,7 @@ public class PlayerController : MonoBehaviour
     void CheckGround()
     {
         // Kiểm tra xem GroundCheck có chạm bất kỳ vật thể nào không
-        bool isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, ~0); // ~0 chọn tất cả layer
+        bool isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
         if (isGrounded)
         {
@@ -142,15 +161,12 @@ public class PlayerController : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         firePoint.rotation = Quaternion.Euler(0, 0, angle);
     }
-    private bool isGrounded()
-    {
-        RaycastHit2D raycast = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
-        return raycast.collider != null;
-    }
+
     void Shoot()
     {
         StartCoroutine(ShootWithDelay(0.2f));
     }
+
     IEnumerator ShootWithDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -159,19 +175,35 @@ public class PlayerController : MonoBehaviour
         GameObject projectile = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         projectile.GetComponent<Projectiles>().SetDirection(shootDirection);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
 
-        if (collision.gameObject.name == "Trap" || collision.gameObject.name == "Trap (1)" || collision.gameObject.name == "Trap (2)")
+    // OnCollisionEnter2D xử lý va chạm vật lý
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("C1M1"))
         {
-            // Trừ toàn bộ máu
-            TakeDamage(currentHealth);
+            isTouchingC1M1 = true; // Khi va chạm với quái "C1M1", bắt đầu trừ máu liên tục
         }
+
         if (collision.gameObject.CompareTag("Lava"))
         {
-            isInLava = true;
+            isInLava = true; // Nếu vào lava, bắt đầu trừ máu từ lava
         }
     }
+
+    // Khi không còn chạm vào "C1M1", dừng trừ máu
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("C1M1"))
+        {
+            isTouchingC1M1 = false; // Ngừng trừ máu khi không còn va chạm với "C1M1"
+        }
+
+        if (collision.gameObject.CompareTag("Lava"))
+        {
+            isInLava = false; // Ngừng trừ máu khi ra khỏi lava
+        }
+    }
+
     private void ApplyLavaDamage()
     {
         // Cộng dồn thời gian
@@ -185,13 +217,6 @@ public class PlayerController : MonoBehaviour
 
             // Trừ thời gian tích lũy đi 0.2 giây
             lavaDamageAccumulator -= 0.2f;
-        }
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Lava"))
-        {
-            isInLava = false;
         }
     }
 }

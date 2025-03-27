@@ -8,6 +8,8 @@ TagManager:
   - Trap
   - Enemy
   - Lava
+  - C1M1
+  - Arrow
   layers:
   - Default
   - TransparentFX
