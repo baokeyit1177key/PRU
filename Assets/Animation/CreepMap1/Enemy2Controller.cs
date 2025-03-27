@@ -82,19 +82,19 @@ public class Enemy2Controller : MonoBehaviour
             else
             {
                 Vector2 direction = (player.position - transform.position).normalized;
-                rb.velocity = new Vector2(direction.x * moveSpeed, rb.velocity.y);
+                rb.linearVelocity = new Vector2(direction.x * moveSpeed, rb.linearVelocity.y);
                 FlipTowardsPlayer();
             }
             yield return null;
         }
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         isMoving = false;
     }
 
     private IEnumerator PerformAttack()
     {
         isAttacking = true;
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         animator.SetTrigger("IsAttack");
 
         yield return new WaitForSeconds(attackDuration * 0.5f);
@@ -128,7 +128,7 @@ public class Enemy2Controller : MonoBehaviour
     private void Die()
     {
         isDead = true;
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         GetComponent<Collider2D>().enabled = false;
         animator.SetTrigger("IsDead");
     }
@@ -144,7 +144,7 @@ public class Enemy2Controller : MonoBehaviour
     {
         if (!isMoving || isAttacking || isDead)
         {
-            rb.velocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
         }
     }
 }
