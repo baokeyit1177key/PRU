@@ -77,6 +77,12 @@ public class Projectiles : MonoBehaviour
             {
                 enemyMap2.TakeDamage(damage);
             }
+            
+            BossController_4 bossEnemy = collision.GetComponent<BossController_4>();
+            if (bossEnemy != null)
+            {
+                bossEnemy.TakeDamage(damage);
+            }
         }
 
         hit = true;
