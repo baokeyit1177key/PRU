@@ -8,7 +8,8 @@ TagManager:
   - Trap
   - Enemy
   - Lava
-  - enemybullet
+  - Enemy_2
+  - Enemy_3
   layers:
   - Default
   - TransparentFX
@@ -45,6 +46,15 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Enemy
+    uniqueID: 1778109725
+    locked: 0
+  - name: Enemy_2
+    uniqueID: 3796151739
+    locked: 0
+  - name: Enemy_3
+    uniqueID: 801693247
     locked: 0
   m_RenderingLayers:
   - Default
