@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using UnityEngine.EventSystems;
 public class Projectiles : MonoBehaviour
 {
     [SerializeField] private float speed = 10f;
@@ -8,11 +8,28 @@ public class Projectiles : MonoBehaviour
     private Animator anim;
     private BoxCollider2D boxCollider;
 
+    private int damage; // Thêm biến lưu sát thương
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+    }
+
+    // Thêm phương thức để nhận sát thương từ Player
+    private void Start()
+    {
+        // Tìm Player và lấy sát thương
+        PlayerController player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        if (player != null)
+        {
+            damage = player.AttackDamage;
+        }
+        else
+        {
+            damage = 20; // Sát thương mặc định nếu không tìm thấy Player
+        }
     }
 
     // Update is called once per frame
@@ -31,6 +48,7 @@ public class Projectiles : MonoBehaviour
             return; // Ignore collision with the player or other projectiles
         }
 
+
         if (collision.CompareTag("Enemy"))
         {
             // Giảm máu của đối thủ bằng 20
@@ -40,6 +58,34 @@ public class Projectiles : MonoBehaviour
                 enemy.TakeDamage(20); // Đã chỉnh sửa để gây damage 20
             }
             Destroy(gameObject); // Xóa mũi tên sau khi trúng đối thủ
+
+        // Kiểm tra va chạm với kẻ địch - cả BasicEnemyMap4 và DepstroyEnemyMap4
+        if (collision.CompareTag("Enemy"))
+        {
+            // Kiểm tra BasicEnemyMap4
+            BasicEnemyMap4 basicEnemy = collision.GetComponent<BasicEnemyMap4>();
+            if (basicEnemy != null)
+            {
+                basicEnemy.TakeDamage(damage);
+            }
+
+            // Kiểm tra DepstroyEnemyMap4
+            DepstroyEnemyMap4 depstroyEnemy = collision.GetComponent<DepstroyEnemyMap4>();
+            if (depstroyEnemy != null)
+            {
+                depstroyEnemy.TakeDamage(damage); 
+            }
+            RangedEnemyController rangedEnemy = collision.GetComponent<RangedEnemyController>();
+            if (rangedEnemy != null)
+            {
+                rangedEnemy.TakeDamage(damage);
+            }
+            Enemy3Controller enemy3 = collision.GetComponent<Enemy3Controller>();
+            if (enemy3 != null)
+            {
+                enemy3.TakeDamage(damage);
+            }
+
         }
 
         hit = true;
@@ -54,7 +100,6 @@ public class Projectiles : MonoBehaviour
         gameObject.SetActive(true);
         hit = false;
         boxCollider.enabled = true;
-
         // Rotate the arrow to face the movement direction
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle);
