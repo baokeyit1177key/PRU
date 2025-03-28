@@ -1,7 +1,8 @@
 using System.Collections;
 using UnityEngine;
+using static PlayerController;
 
-public class Nercomancer : BasicEnemyMap4
+public class Nercomancer : BasicEnemyMap3
 {
     public GameObject bulletPrefab;
     [SerializeField] private Transform firePoint;
@@ -109,7 +110,7 @@ public class Nercomancer : BasicEnemyMap4
                     PlayerController playerController = hitCollider.GetComponent<PlayerController>();
                     if (playerController != null)
                     {
-                        playerController.TakeDamage(tickDamage);
+                        playerController.TakeDamage(tickDamage, DamageType.Burn);
                     }
                 }
             }

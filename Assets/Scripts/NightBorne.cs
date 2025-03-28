@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class NightBorne : BasicEnemyMap4
+public class NightBorne : BasicEnemyMap3
 {
     private Animator animator;
     private void Awake()

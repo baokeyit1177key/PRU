@@ -1,29 +1,41 @@
 using System.Collections;
 using UnityEngine;
+using static PlayerController;
 
 public class PoisonArrowController : MonoBehaviour
 {
     private int poisonDamage;
     private float poisonDuration;
-
+    private BoxCollider2D boxCollider;
+    private Rigidbody2D rigidbody;
     public void Initialize(int damage, float duration)
     {
         poisonDamage = damage;
         poisonDuration = duration;
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void Awake()
     {
-        // Check if hit player
-        PlayerController playerHealth = collision.gameObject.GetComponent<PlayerController>();
-        if (playerHealth != null)
-        {
-            // Apply poison damage over time
-            StartCoroutine(ApplyPoisonDamage(playerHealth));
-        }
-
-        // Destroy arrow
-        Destroy(gameObject);
+        boxCollider = GetComponent<BoxCollider2D>();
+        rigidbody = GetComponent<Rigidbody2D>();
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {          
+            if (collision.CompareTag("Enemy") || collision.CompareTag("Projectiles"))
+            {
+                return; // Ignore collision with the player
+            }
+            if (collision.CompareTag("Player"))
+            {
+            Debug.Log("Hit: " + collision.gameObject.name);
+            PlayerController player = collision.GetComponent<PlayerController>();
+                if (player != null)
+                {
+                    StartCoroutine(ApplyPoisonDamage(player));
+                    rigidbody.linearVelocity = Vector2.zero;
+                    Destroy(gameObject);
+                }
+            }
+            boxCollider.enabled = false;
     }
 
     private IEnumerator ApplyPoisonDamage(PlayerController player)
@@ -32,9 +44,9 @@ public class PoisonArrowController : MonoBehaviour
 
         while (elapsedTime < poisonDuration)
         {
-            player.TakeDamage(poisonDamage);
-            yield return new WaitForSeconds(1f);
-            elapsedTime += 1f;
+            player.TakeDamage(poisonDamage, DamageType.Poison);
+            yield return new WaitForSeconds(0.5f);
+            elapsedTime += 0.5f;
         }
     }
 }

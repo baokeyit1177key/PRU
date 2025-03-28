@@ -5,32 +5,40 @@ public class BossAttackController : MonoBehaviour
 {
     [Header("Attack Configuration")]
     [SerializeField] private Transform projectileSpawnPoint;
+    [SerializeField] private Transform beamSpawnPoint;
 
     [Header("Beam Attack Settings")]
     [SerializeField] private GameObject beamSpritePrefab;
-    [SerializeField] private float beamDuration = 0.2f;
-    [SerializeField] private float beamLength = 20f;
-    [SerializeField] private LayerMask playerLayer;
+    [SerializeField] private float beamDuration = 0.6f;
+    [SerializeField] private float beamLength = 15f;
+    [SerializeField] public LayerMask playerLayer;
+    [SerializeField] public LayerMask groundLayer;
     [SerializeField] private int beamDamage = 20;
 
     [Header("Poison Arrow Settings")]
     [SerializeField] private GameObject poisonArrowPrefab;
+    [SerializeField] private GameObject arrowPrefab;
     [SerializeField] private float arrowSpeed = 10f;
     [SerializeField] private int poisonDamage = 3;
     [SerializeField] private float poisonDuration = 3f;
 
     [Header("Animation References")]
-    [SerializeField] private Animator animator;
+    [SerializeField] public Animator animator;
 
     [Header("Attack Parameters")]
-    [SerializeField] private float minTimeBetweenAttacks = 2f;
-    [SerializeField] private float maxTimeBetweenAttacks = 4f;
+    [SerializeField] private float minTimeBetweenAttacks = 5f;
+    [SerializeField] private float maxTimeBetweenAttacks = 10f;
+    [Header("Damage Parameters")]
+    [SerializeField] public int groundHitDamage = 20;
+    [SerializeField] public int playerDeflectDamage = 10;
 
+    [SerializeField] private PlayerController player;
     // Attack types
     public enum AttackType
     {
         BeamAttack,
-        PoisonArrowAttack
+        PoisonArrowAttack,
+        JumpAttack
     }
 
     private float lastAttackTime;
@@ -58,7 +66,7 @@ public class BossAttackController : MonoBehaviour
         switch (selectedAttack)
         {
             case AttackType.BeamAttack:
-                StartCoroutine(PerformBeamAttack());
+                StartCoroutine(PerformBeamAttack(0.75f));
                 break;
             case AttackType.PoisonArrowAttack:
                 StartCoroutine(PerformPoisonArrowAttack());
@@ -66,17 +74,16 @@ public class BossAttackController : MonoBehaviour
         }
     }
 
-    private IEnumerator PerformBeamAttack()
+    private IEnumerator PerformBeamAttack(float delay)
     {
         isAttacking = true;
-        lastAttackTime = Time.time;
-
+        lastAttackTime = Time.time;       
         // Trigger beam attack animation
         animator.SetTrigger("BeamAttack");
-
+        yield return new WaitForSeconds(delay);
         // Calculate beam direction and origin
         Vector2 beamDirection = DetermineBeamDirection();
-        Vector2 beamOrigin = (Vector2)projectileSpawnPoint.position;
+        Vector2 beamOrigin = (Vector2)beamSpawnPoint.position;
 
         // Spawn beam sprite
         GameObject beamObject = Instantiate(beamSpritePrefab, beamOrigin, Quaternion.identity);
@@ -89,15 +96,27 @@ public class BossAttackController : MonoBehaviour
         beamObject.transform.localScale = new Vector3(beamLength, beamObject.transform.localScale.y, 1);
 
         // Perform raycast for damage
-        RaycastHit2D hit = Physics2D.Raycast(beamOrigin, beamDirection, beamLength, playerLayer);
+        RaycastHit2D[] hits = Physics2D.RaycastAll(beamOrigin, beamDirection, beamLength, playerLayer);
 
-        // Damage player if hit
-        if (hit.collider != null)
+        // Debug logging
+        Debug.Log($"Beam Attack: Origin {beamOrigin}, Direction {beamDirection}, Length {beamLength}");
+        Debug.Log($"Number of hits: {hits.Length}");
+
+        // Damage players if hit
+        foreach (RaycastHit2D hit in hits)
         {
-            PlayerController playerHealth = hit.collider.GetComponent<PlayerController>();
-            if (playerHealth != null)
+            Debug.Log($"Hit object: {hit.collider.gameObject.name}");
+
+            // Multiple ways to detect player
+
+            if (player != null)
             {
-                playerHealth.TakeDamage(beamDamage);
+                Debug.Log($"Beam hit player {hit.collider.gameObject.name} at {hit.point}, dealing {beamDamage} damage");
+                player.TakeDamage(beamDamage);
+            }
+            else
+            {
+                Debug.Log($"No PlayerController found on {hit.collider.gameObject.name}");
             }
         }
 
@@ -108,6 +127,19 @@ public class BossAttackController : MonoBehaviour
         Destroy(beamObject);
 
         isAttacking = false;
+    }
+    public void PerformJumpArrowAttack()
+    {
+        GameObject arrow = Instantiate(arrowPrefab, projectileSpawnPoint.position, Quaternion.identity);
+        arrow.SetActive(true);
+        Rigidbody2D arrowRb = arrow.GetComponent<Rigidbody2D>();
+
+        // Set arrow velocity downwards
+        arrowRb.linearVelocity = Vector2.down * arrowSpeed;
+
+        // Add arrow collision detection
+        ArrowProjectile arrowScript = arrow.AddComponent<ArrowProjectile>();
+        arrowScript.Initialize(this, groundLayer, playerLayer);
     }
 
     private IEnumerator PerformPoisonArrowAttack()
@@ -123,6 +155,9 @@ public class BossAttackController : MonoBehaviour
 
         // Spawn arrow
         GameObject arrow = Instantiate(poisonArrowPrefab, projectileSpawnPoint.position, Quaternion.identity);
+        Vector3 newScale = arrow.transform.localScale;
+        newScale.x *= -1;
+        arrow.transform.localScale = newScale;
         arrow.SetActive(true);
         Rigidbody2D arrowRb = arrow.GetComponent<Rigidbody2D>();
 
@@ -164,17 +199,32 @@ public class BossAttackController : MonoBehaviour
     // Public method to manually trigger an attack type
     public void ForceAttack(AttackType attackType)
     {
-        if (!isAttacking)
+        if (!isAttacking && !IsInJumpAnimation())
         {
             switch (attackType)
             {
                 case AttackType.BeamAttack:
-                    StartCoroutine(PerformBeamAttack());
+                    StartCoroutine(PerformBeamAttack(0.75f));
                     break;
                 case AttackType.PoisonArrowAttack:
                     StartCoroutine(PerformPoisonArrowAttack());
                     break;
+                case AttackType.JumpAttack:
+                    PerformJumpArrowAttack();
+                    break;
             }
         }
+    }
+    protected virtual void DealDamage(int damage)
+    {
+        if (player != null)
+        {
+            player.TakeDamage(damage); // Make sure PlayerController has a TakeDamage method
+        }
+    }
+    private bool IsInJumpAnimation()
+    {
+        
+        return animator.GetCurrentAnimatorStateInfo(0).IsName("j_up");
     }
 }

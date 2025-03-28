@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -23,14 +24,27 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundLayer; // Layer của Ground
     private bool isDead = false;
     [SerializeField] private GameManager gameManager;
+    [SerializeField] private SpriteRenderer playerSprite;
     private bool isInLava = false;
     [SerializeField] private int lavaDamagePerSecond = 5;
     private float lavaDamageAccumulator = 0f;
     public int statPoints;
     // Thêm vào class PlayerController
     [SerializeField] private int attackDamage = 20; // Sát thương cơ bản, có thể điều chỉnh trong Inspector
+    [SerializeField] private float invincibilityDuration = 1.5f;
+    [SerializeField] private float invincibilityFlashInterval = 0.1f;
+    private bool isInvincible = false;
     public int AttackDamage { get { return attackDamage; } set { attackDamage = value; } }
-
+    [SerializeField] private List<DamageType> bypassInvincibilityTypes;
+    public enum DamageType
+    {
+        Normal,
+        Burn,
+        Poison,
+        Bleed,
+        Shock
+        // Add more as needed
+    }
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -96,15 +110,69 @@ public class PlayerController : MonoBehaviour
     }
 
     }
-    public void TakeDamage(int damage)
+    private void OnCollisionEnter(Collision collision)
     {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
-        if (currentHealth <= 0)
+        // Check if the collided object is the boss
+        if (collision.gameObject.CompareTag("Boss"))
         {
-            Die();
+            // Destroy the boss
+            Destroy(collision.gameObject);
+
+            // Open the upgrade menu
+            gameManager.CompleteMap();
+        }
+    }
+    private IEnumerator InvincibilityCoroutine()
+    {
+        // Set invincibility flag
+        isInvincible = true;
+
+        // Track elapsed time
+        float elapsedTime = 0f;
+
+        // Visual feedback during invincibility
+        while (elapsedTime < invincibilityDuration)
+        {
+
+            playerSprite.enabled = !playerSprite.enabled;
+
+            // Wait for flash interval
+            yield return new WaitForSeconds(invincibilityFlashInterval);
+
+            // Increment elapsed time
+            elapsedTime += invincibilityFlashInterval;
         }
 
+        // Ensure sprite is visible at end of invincibility
+        playerSprite.enabled = true;
+
+        // Reset invincibility
+        isInvincible = false;
+    }
+    public void TakeDamage(int damage, DamageType damageType = DamageType.Normal)
+    {
+        // Check if damage type bypasses invincibility
+        bool canTakeDamage = bypassInvincibilityTypes.Contains(damageType) || !isInvincible;
+
+        if (canTakeDamage)
+        {
+            // Reduce health
+            currentHealth -= damage;
+            healthBar.SetHealth(currentHealth);
+
+            // Check if player dies
+            if (currentHealth <= 0)
+            {
+                Die();
+                return;
+            }
+
+            // Start invincibility only for non-bypassing damage types
+            if (!bypassInvincibilityTypes.Contains(damageType))
+            {
+                StartCoroutine(InvincibilityCoroutine());
+            }
+        }
     }
     void Die()
     {
@@ -190,7 +258,7 @@ public class PlayerController : MonoBehaviour
         if (lavaDamageAccumulator >= 0.2f)
         {
             // Gây 1 damage
-            TakeDamage(1);
+            TakeDamage(1, DamageType.Burn);
 
             // Trừ thời gian tích lũy đi 0.2 giây
             lavaDamageAccumulator -= 0.2f;

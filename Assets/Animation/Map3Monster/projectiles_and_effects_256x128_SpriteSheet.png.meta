@@ -1270,9 +1270,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 124
-        y: 437
+        y: 433
         width: 19
-        height: 26
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1402,9 +1402,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 111
-        y: 173
+        y: 304
         width: 49
-        height: 162
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1424,9 +1424,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 367
-        y: 186
+        y: 303
         width: 49
-        height: 140
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1446,9 +1446,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 623
-        y: 162
+        y: 307
         width: 41
-        height: 170
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1468,9 +1468,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 880
-        y: 187
+        y: 306
         width: 40
-        height: 143
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1490,9 +1490,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1136
-        y: 192
+        y: 304
         width: 54
-        height: 153
+        height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1511,10 +1511,10 @@ TextureImporter:
       name: projectiles_and_effects_256x128_SpriteSheet_52
       rect:
         serializedVersion: 2
-        x: 1394
-        y: 229
+        x: 1393
+        y: 307
         width: 52
-        height: 116
+        height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1533,10 +1533,10 @@ TextureImporter:
       name: projectiles_and_effects_256x128_SpriteSheet_53
       rect:
         serializedVersion: 2
-        x: 1639
-        y: 172
+        x: 1640
+        y: 305
         width: 63
-        height: 173
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1556,9 +1556,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1906
-        y: 221
+        y: 309
         width: 52
-        height: 124
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2418,7 +2418,7 @@ TextureImporter:
         width: 255
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2440,7 +2440,7 @@ TextureImporter:
         width: 258
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

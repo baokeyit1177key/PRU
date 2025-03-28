@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public void MainMenu()
     {
@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
     }
     public void StartGame()
     {
-       pauseMenu.SetActive(false);
+        pauseMenu.SetActive(false);
         mainMenu.SetActive(false);
         gameOverMenu.SetActive(false);
         upgradeMenu.Hide();
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
     }
     public void ResumeGame()
     {
-       pauseMenu.SetActive(false);
+        pauseMenu.SetActive(false);
         mainMenu.SetActive(false);
         gameOverMenu.SetActive(false);
         upgradeMenu.Hide();
@@ -67,5 +67,19 @@ public class GameManager : MonoBehaviour
     {
         upgradeMenu.ShowUpgradeMenu();
         Time.timeScale = 0f;
+    }
+    public void ContinueToNextLevel()
+    {
+        // Resume game time
+        Time.timeScale = 1f;
+
+        // Hide the upgrade menu
+        if (upgradeMenu != null)
+        {
+            upgradeMenu.Hide();
+        }
+
+        // Load the next scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
