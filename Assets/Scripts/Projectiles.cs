@@ -47,6 +47,35 @@ public class Projectiles : MonoBehaviour
                 hit = true;
                 anim.SetTrigger("hit");
                 rigidbody.linearVelocity = Vector2.zero;
+                basicEnemy.TakeDamage(damage);
+            }
+
+            // Kiểm tra DepstroyEnemyMap4
+            DepstroyEnemyMap4 depstroyEnemy = collision.GetComponent<DepstroyEnemyMap4>();
+            if (depstroyEnemy != null)
+            {
+                depstroyEnemy.TakeDamage(damage); 
+            }
+            RangedEnemyController rangedEnemy = collision.GetComponent<RangedEnemyController>();
+            if (rangedEnemy != null)
+            {
+                rangedEnemy.TakeDamage(damage);
+            }
+            Enemy3Controller enemy3 = collision.GetComponent<Enemy3Controller>();
+            if (enemy3 != null)
+            {
+                enemy3.TakeDamage(damage);
+            }
+            EnemyMap2 enemyMap2 = collision.GetComponent<EnemyMap2>();
+            if (enemyMap2 != null)
+            {
+                enemyMap2.TakeDamage(damage);
+            }
+            
+            BossController_4 bossEnemy = collision.GetComponent<BossController_4>();
+            if (bossEnemy != null)
+            {
+                bossEnemy.TakeDamage(damage);
             }
         }
 

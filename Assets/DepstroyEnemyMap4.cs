@@ -12,9 +12,16 @@ public class DepstroyEnemyMap4 : MonoBehaviour
     [SerializeField] private int damage = 10;
 
     [Header("Attack Animation Durations")]
-    [SerializeField] private float attack1Duration = 0.35f; // Attack1 animation duration
-    [SerializeField] private float attack2Duration = 0.20f; // Attack2 animation duration
+    [SerializeField] private float attack1Duration = 0.35f; // Attack1 animation duration (now melee)
+    [SerializeField] private float attack2Duration = 0.20f; // Attack2 animation duration (now ranged)
     [SerializeField] private float idleDuration = 1f; // Duration to stay in idle before moving again
+
+    [Header("Projectile Settings")]
+    [SerializeField] private Transform firePoint; // Add this in the inspector
+    [SerializeField] private GameObject bulletPrefab; // Add this in the inspector
+    [SerializeField] private float bulletSpeed = 10f;
+    [SerializeField] private int bulletDamage = 8;
+    [SerializeField] private Vector3 bulletScale = new Vector3(1f, 1f, 1f); // Kích thước cho viên đạn
 
     [Header("Health")]
     [SerializeField] private int maxHealth = 100;
@@ -29,6 +36,7 @@ public class DepstroyEnemyMap4 : MonoBehaviour
     private float cooldownTimer = 0f;
     private bool isDead = false;
     private bool isMoving = false;
+    private string currentAttackType = "none"; // Track current attack type
 
     void Awake()
     {
@@ -47,8 +55,24 @@ public class DepstroyEnemyMap4 : MonoBehaviour
                 player = playerObj.transform;
             }
         }
+
+        // If firePoint is not set, we'll try to find it
+        if (firePoint == null)
+        {
+            Transform foundFirePoint = transform.Find("shoot");
+            if (foundFirePoint != null)
+            {
+                firePoint = foundFirePoint;
+            }
+            else
+            {
+                Debug.LogWarning("FirePoint not assigned and not found in children!");
+            }
+        }
+
         animator.SetBool("IsEnable", false);
         animator.SetBool("IsWalk", false);
+        animator.SetBool("IsIdle", false);
     }
 
     void Update()
@@ -94,6 +118,7 @@ public class DepstroyEnemyMap4 : MonoBehaviour
     private IEnumerator MoveTowardsPlayer()
     {
         isMoving = true;
+        ResetAllAnimationStates();
         animator.SetBool("IsWalk", true);
 
         float moveDuration = Random.Range(2f, 3f);
@@ -137,40 +162,61 @@ public class DepstroyEnemyMap4 : MonoBehaviour
         FlipTowardsPlayer();
     }
 
+    private void ResetAllAnimationStates()
+    {
+        // Reset all animation triggers and bools
+        animator.ResetTrigger("IsAttack1");
+        animator.ResetTrigger("IsAttack2");
+        animator.SetBool("IsWalk", false);
+        animator.SetBool("IsIdle", false);
+        currentAttackType = "none";
+    }
+
     private IEnumerator PerformAttack()
     {
         isAttacking = true;
         StopMovement();
 
+        // Reset animation states before starting a new attack
+        ResetAllAnimationStates();
+
         // Check distance to player
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-        float attackDuration;
 
         if (distanceToPlayer <= attackRange)
         {
-            // Close attack (AttackPhysical)
-            animator.SetTrigger("IsAttack2");
-            attackDuration = attack2Duration;
+            // Close attack (melee)
+            currentAttackType = "melee";
+            animator.SetTrigger("IsAttack1");
+
+            // Wait for exact attack animation duration
+            yield return new WaitForSeconds(attack1Duration);
+
+            // Apply damage if in range
+            if (Vector2.Distance(transform.position, player.position) <= attackRange)
+            {
+                PlayerController playerController = player.GetComponent<PlayerController>();
+                if (playerController != null)
+                {
+                    playerController.TakeDamage(damage);
+                }
+            }
         }
         else
         {
-            // Range attack (New Animation)
-            animator.SetTrigger("IsAttack1");
-            attackDuration = attack1Duration;
+            // Range attack
+            currentAttackType = "ranged";
+            animator.SetTrigger("IsAttack2");
+
+            // Wait for exact attack animation duration
+            yield return new WaitForSeconds(attack2Duration);
+
+            // Shoot a bullet
+            ShootBullet();
         }
 
-        // Wait for exact attack animation duration
-        yield return new WaitForSeconds(attackDuration);
-
-        // Apply damage if in range
-        if (distanceToPlayer <= attackRange)
-        {
-            PlayerController playerController = player.GetComponent<PlayerController>();
-            if (playerController != null)
-            {
-                playerController.TakeDamage(damage);
-            }
-        }
+        // Clear previous attack state
+        ResetAllAnimationStates();
 
         // Switch to idle state
         animator.SetBool("IsIdle", true);
@@ -184,6 +230,7 @@ public class DepstroyEnemyMap4 : MonoBehaviour
         // Reset attack state and cooldown
         isAttacking = false;
         cooldownTimer = attackCooldown;
+        currentAttackType = "none";
 
         // Start moving towards player again
         if (!isDead)
@@ -192,25 +239,75 @@ public class DepstroyEnemyMap4 : MonoBehaviour
         }
     }
 
+    private void ShootBullet()
+    {
+        if (firePoint == null || bulletPrefab == null) return;
+
+        // Create the bullet
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+
+        // Điều chỉnh kích thước của viên đạn
+        bullet.transform.localScale = bulletScale;
+
+        // Get direction to player - Chỉ lấy hướng theo trục X, giữ Y = 0 để đạn bay thẳng
+        Vector2 direction = player.position - firePoint.position;
+        direction.y = 0; // Đặt y = 0 để đạn bay ngang
+        direction = direction.normalized;
+
+        // Set bullet velocity
+        Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
+        if (bulletRb != null)
+        {
+            // Vô hiệu hóa trọng lực cho viên đạn
+            bulletRb.gravityScale = 0f;
+            bulletRb.linearVelocity = direction * bulletSpeed;
+        }
+
+        // Set up bullet damage component or add it if it doesn't exist
+        BulletController bulletController = bullet.GetComponent<BulletController>();
+        if (bulletController == null)
+        {
+            bulletController = bullet.AddComponent<BulletController>();
+        }
+
+        bulletController.damage = bulletDamage;
+        bulletController.shooter = gameObject;
+
+        // Lật hướng viên đạn theo hướng di chuyển nếu cần
+        if (direction.x < 0)
+        {
+            Vector3 scale = bullet.transform.localScale;
+            bullet.transform.localScale = new Vector3(-scale.x, scale.y, scale.z);
+        }
+
+        // Destroy bullet after some time if it doesn't hit anything
+        Destroy(bullet, 5f);
+    }
+
     public void TakeDamage(int damage)
     {
+        Debug.Log("Taking damage: " + damage);
         if (isDead) return;
 
         currentHealth -= damage;
+        Debug.Log("Current health: " + currentHealth);
 
         if (currentHealth <= 0)
         {
+            Debug.Log("Should die now, health <= 0");
             Die();
         }
     }
-
     private void Die()
     {
         isDead = true;
         StopMovement();
         Collider2D col = GetComponent<Collider2D>();
         if (col != null) col.enabled = false;
-        animator.SetBool("IsWalk", false);
+
+        // Clear all animation states before death
+        ResetAllAnimationStates();
+
         animator.SetTrigger("IsDead");
         StartCoroutine(DestroyAfterDeath());
     }
@@ -242,6 +339,34 @@ public class DepstroyEnemyMap4 : MonoBehaviour
         if (!animator.GetBool("IsWalk") || isAttacking || isDead)
         {
             rb.linearVelocity = Vector2.zero;
+        }
+    }
+}
+
+
+public class BulletController : MonoBehaviour
+{
+    public int damage = 8;
+    public GameObject shooter; // Reference to who shot this bullet (to prevent self-damage)
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Check if we hit the player
+        if (collision.CompareTag("Player"))
+        {
+            PlayerController playerController = collision.GetComponent<PlayerController>();
+            if (playerController != null)
+            {
+                playerController.TakeDamage(damage);
+            }
+
+            // Destroy the bullet after hitting
+            Destroy(gameObject);
+        }
+        // You can add more collision checks here (like for walls, etc.)
+        else if (collision.CompareTag("Ground") || collision.CompareTag("Wall"))
+        {
+            Destroy(gameObject);
         }
     }
 }
