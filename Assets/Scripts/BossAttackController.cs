@@ -253,7 +253,7 @@ public class BossAttackController : MonoBehaviour
 
         // Add poison arrow behavior
         PoisonArrowController arrowController = arrow.AddComponent<PoisonArrowController>();
-
+        Destroy(arrow, 3f);
         // Wait for attack to complete
         yield return new WaitForSeconds(1f);
 

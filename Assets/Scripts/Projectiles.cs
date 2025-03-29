@@ -89,7 +89,7 @@ public class Projectiles : MonoBehaviour
             BossController_2 bossEnemy2 = collision.GetComponent<BossController_2>();
             if (bossEnemy2 != null)
             {
-                bossEnemy2.TakeDamage(damage);
+                bossEnemy2.TakeDamage(player.damage);
             }
         }
 
