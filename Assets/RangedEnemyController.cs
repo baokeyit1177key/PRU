@@ -25,7 +25,7 @@ public class RangedEnemyController : MonoBehaviour
 
     [Header("Health")]
     [SerializeField] private int maxHealth = 80;
-    private int currentHealth;
+    public int currentHealth;
 
     [Header("References")]
     [SerializeField] private Transform player;
