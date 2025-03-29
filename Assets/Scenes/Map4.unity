@@ -153,6 +153,37 @@ Transform:
   - {fileID: 1409625830}
   m_Father: {fileID: 1583758937}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &58009423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 58009424}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: SpawnPoint
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &58009424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58009423}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.99, y: 1.56, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &64787553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1573,7 +1604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FollowSpeed: 2
   target: {fileID: 2080743893}
-  zoomedOutSize: 8
+  zoomedOutSize: 14
   normalSize: 5
   zoomTransitionSpeed: 2
 --- !u!1 &506568305
@@ -32208,7 +32239,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -899, y: 302}
+  m_AnchoredPosition: {x: -595.48, y: 396.27}
   m_SizeDelta: {x: 408.4787, y: 58.9058}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1745698308
@@ -32455,6 +32486,7 @@ MonoBehaviour:
   mainMenu: {fileID: 1569192134}
   gameOverMenu: {fileID: 198078585}
   pauseMenu: {fileID: 1422362763}
+  upgradeMenu: {fileID: 0}
 --- !u!4 &1818136739
 Transform:
   m_ObjectHideFlags: 0
@@ -32594,6 +32626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  player: {fileID: 2080743890}
 --- !u!95 &1870609256
 Animator:
   serializedVersion: 7
@@ -33326,7 +33359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FollowSpeed: 2
   target: {fileID: 0}
-  zoomedOutSize: 8
+  zoomedOutSize: 10
   normalSize: 5
   zoomTransitionSpeed: 2
 --- !u!60 &2080743887
@@ -33484,7 +33517,10 @@ MonoBehaviour:
   moveSpeed: 5
   jumpForce: 8
   bulletPrefab: {fileID: 1870609253}
+  maxHealth: 100
+  damage: 10
   healthBar: {fileID: 1745698308}
+  currentHealth: 0
   firePoint: {fileID: 585482605}
   attackCooldown: 0.1
   groundCheck: {fileID: 829400684}
@@ -33493,8 +33529,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   gameManager: {fileID: 1818136738}
+  playerSprite: {fileID: 2080743892}
   lavaDamagePerSecond: 5
+  statPoints: 0
   attackDamage: 20
+  invincibilityDuration: 1.5
+  invincibilityFlashInterval: 0.1
+  bypassInvincibilityTypes: 0100000002000000
 --- !u!95 &2080743891
 Animator:
   serializedVersion: 7
@@ -33611,3 +33652,4 @@ SceneRoots:
   - {fileID: 1343752292}
   - {fileID: 2006323991}
   - {fileID: 1583758937}
+  - {fileID: 58009424}

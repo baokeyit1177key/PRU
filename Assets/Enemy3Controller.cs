@@ -250,6 +250,7 @@ public class Enemy3Controller : MonoBehaviour
 
         animator.SetTrigger("IsDead");
         StartCoroutine(DestroyAfterDeath());
+
     }
 
     private IEnumerator DestroyAfterDeath()

@@ -4,15 +4,11 @@ using static PlayerController;
 
 public class PoisonArrowController : MonoBehaviour
 {
-    private int poisonDamage;
-    private float poisonDuration;
     private BoxCollider2D boxCollider;
     private Rigidbody2D rigidbody;
-    public void Initialize(int damage, float duration)
-    {
-        poisonDamage = damage;
-        poisonDuration = duration;
-    }
+    private bool isPoisoned = false;
+    [SerializeField] private int poisonDamage = 3;
+    [SerializeField] private float poisonDuration = 5f;
     private void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
@@ -40,13 +36,39 @@ public class PoisonArrowController : MonoBehaviour
 
     private IEnumerator ApplyPoisonDamage(PlayerController player)
     {
-        float elapsedTime = 0f;
+        if (isPoisoned) yield break;
 
+        isPoisoned = true;
+        float elapsedTime = 0f;
+        int tickCount = 0;
+
+        Debug.Log($"Starting poison effect on player. Duration: {poisonDuration}s, Damage per tick: {poisonDamage}");
+
+        // Apply initial poison damage
+        player.TakeDamage(poisonDamage, DamageType.Poison);
+        tickCount++;
+        Debug.Log($"Poison tick {tickCount}: Applied {poisonDamage} damage");
+
+        // Continue applying damage over time
         while (elapsedTime < poisonDuration)
         {
-            player.TakeDamage(poisonDamage, DamageType.Poison);
             yield return new WaitForSeconds(0.5f);
             elapsedTime += 0.5f;
+
+            // Check if player still exists and is valid
+            if (player == null)
+            {
+                Debug.Log("Poison effect stopped: Player reference is null");
+                break;
+            }
+
+            // Apply poison damage
+            player.TakeDamage(poisonDamage, DamageType.Poison);
+            tickCount++;
+            Debug.Log($"Poison tick {tickCount}: Applied {poisonDamage} damage at time {elapsedTime}s");
         }
+
+        Debug.Log($"Poison effect completed after {tickCount} ticks and {elapsedTime}s");
+        isPoisoned = false;
     }
 }

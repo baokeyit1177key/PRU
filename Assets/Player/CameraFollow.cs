@@ -4,6 +4,7 @@ public class CameraFollow : MonoBehaviour
 {
     [Header("Follow Settings")]
     public float FollowSpeed = 2f;
+    [SerializeField] private string playerTag = "Player";
     public Transform target;
 
     [Header("Boss Detection Camera Effects")]
@@ -29,11 +30,19 @@ public class CameraFollow : MonoBehaviour
         {
             normalSize = mainCamera.orthographicSize;
         }
+        FindPlayer();
     }
-
+    void OnEnable()
+    {
+        FindPlayer();
+    }
     void Update()
     {
-        if (target == null) return;
+        if (target == null)
+        {
+            FindPlayer(); // Continuously try to find player if lost
+            return;
+        }
 
         if (isBossDetected)
         {
@@ -56,5 +65,20 @@ public class CameraFollow : MonoBehaviour
     {
         isBossDetected = detected;
     }
-
+    private void FindPlayer()
+    {
+        // Try to find player by tag if target is null
+        if (target == null)
+        {
+            GameObject playerObject = GameObject.FindGameObjectWithTag(playerTag);
+            if (playerObject != null)
+            {
+                target = playerObject.transform;
+            }
+            else
+            {
+                Debug.LogWarning("No player found with tag: " + playerTag);
+            }
+        }
+    }
 }

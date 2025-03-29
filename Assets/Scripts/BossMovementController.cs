@@ -14,7 +14,10 @@ public class BossMovementController : MonoBehaviour
     [Header("References")]
     [SerializeField] private Animator animator;
     [SerializeField] private Transform player;
-
+    [Header("Health")]
+    [SerializeField] public int maxHealth = 500;
+    public int enemyHealth;
+    [SerializeField] private GameManager gameManager;
     private Vector3 startPosition;
     private Vector3 targetPosition;
     private bool isJumping = false;
@@ -34,6 +37,7 @@ public class BossMovementController : MonoBehaviour
         }
 
         lastJumpTime = -minTimeBetweenJumps;
+        enemyHealth = maxHealth;
     }
     private void Update()
     {
@@ -104,6 +108,34 @@ public class BossMovementController : MonoBehaviour
         animator.SetTrigger("Land");
 
         isJumping = false;
+    }
+    public void TakeDamage(int damage)
+    {
+        enemyHealth -= damage;
+        Debug.Log(gameObject.name + " took " + damage + " damage! HP: " + enemyHealth);
+        animator.SetTrigger("isHit");
+        if (enemyHealth <= 0)
+        {
+            // Call these BEFORE starting the death coroutine
+            if (gameManager != null)
+            {
+                gameManager.CompleteMap();
+            }
+            else
+            {
+                Debug.LogError("GameManager reference is null! Cannot complete map.");
+            }
+
+            // Now handle the death animation and object destruction
+            StartCoroutine(HandleDeath());
+        }
+    }
+    protected virtual IEnumerator HandleDeath()
+    {
+        Debug.Log(gameObject.name + " has died!");
+        animator.SetTrigger("Death");
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+        Destroy(gameObject);
     }
     private void OnDrawGizmosSelected()
     {

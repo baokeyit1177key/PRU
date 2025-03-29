@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour
     private bool isInvincible = false;
     public int AttackDamage { get { return attackDamage; } set { attackDamage = value; } }
     [SerializeField] private List<DamageType> bypassInvincibilityTypes;
+    private static PlayerController instance;
     public enum DamageType
     {
         Normal,
@@ -51,6 +53,16 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+            Debug.Log("Main Player initialized: " + gameObject.name);// Keep the Player across scenes
+        }
+        else
+        {
+            Destroy(gameObject); // Destroy duplicate Player
+        }
     }
 
     void Start()
@@ -58,7 +70,7 @@ public class PlayerController : MonoBehaviour
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         rb = GetComponent<Rigidbody2D>();
-
+        SceneManager.sceneLoaded += OnSceneLoaded;
         if (firePoint == null)
         {
             GameObject fp = new GameObject("FirePoint");
@@ -73,7 +85,7 @@ public class PlayerController : MonoBehaviour
             groundCheck = gc.transform;
             groundCheck.SetParent(transform);
             groundCheck.localPosition = new Vector3(0f, -1f, 0f);
-        }
+        }      
     }
 
     void Update()
@@ -108,8 +120,6 @@ public class PlayerController : MonoBehaviour
             ApplyLavaDamage();
         }
     }
-
-    }
     private void OnCollisionEnter(Collision collision)
     {
         // Check if the collided object is the boss
@@ -120,6 +130,25 @@ public class PlayerController : MonoBehaviour
 
             // Open the upgrade menu
             gameManager.CompleteMap();
+        }
+    }
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Find SpawnPoint in the new scene
+        GameObject spawnPoint = GameObject.FindWithTag("SpawnPoint");
+
+        if (spawnPoint != null)
+        {
+            transform.position = spawnPoint.transform.position;  
+            SceneManager.MoveGameObjectToScene(gameObject, scene);
+        }
+        else
+        {
+            Debug.LogWarning("SpawnPoint not found in the new scene!");
         }
     }
     private IEnumerator InvincibilityCoroutine()

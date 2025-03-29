@@ -8,7 +8,7 @@ public class EnemyProjectiles : MonoBehaviour
     private Animator anim;
     private BoxCollider2D boxCollider;
     private Rigidbody2D rigidbody;
-    public BasicEnemyMap4 enemy;
+    public BasicEnemyMap3 enemy;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {

@@ -38,7 +38,7 @@ public class Projectiles : MonoBehaviour
         }
 
         // Kiểm tra va chạm với kẻ địch - cả BasicEnemyMap4 và DepstroyEnemyMap4
-        if (collision.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy") || collision.CompareTag("Boss"))
         {
             BasicEnemyMap4 enemy = collision.GetComponent<BasicEnemyMap4>();
             if (enemy != null) 
@@ -47,35 +47,44 @@ public class Projectiles : MonoBehaviour
                 hit = true;
                 anim.SetTrigger("hit");
                 rigidbody.linearVelocity = Vector2.zero;
-                basicEnemy.TakeDamage(damage);
             }
 
             // Kiểm tra DepstroyEnemyMap4
             DepstroyEnemyMap4 depstroyEnemy = collision.GetComponent<DepstroyEnemyMap4>();
             if (depstroyEnemy != null)
             {
-                depstroyEnemy.TakeDamage(damage); 
+                depstroyEnemy.TakeDamage(player.damage); 
             }
             RangedEnemyController rangedEnemy = collision.GetComponent<RangedEnemyController>();
             if (rangedEnemy != null)
             {
-                rangedEnemy.TakeDamage(damage);
+                rangedEnemy.TakeDamage(player.damage);
             }
             Enemy3Controller enemy3 = collision.GetComponent<Enemy3Controller>();
             if (enemy3 != null)
             {
-                enemy3.TakeDamage(damage);
+                enemy3.TakeDamage(player.damage);
             }
             EnemyMap2 enemyMap2 = collision.GetComponent<EnemyMap2>();
             if (enemyMap2 != null)
             {
-                enemyMap2.TakeDamage(damage);
+                enemyMap2.TakeDamage(player.damage);
             }
             
             BossController_4 bossEnemy = collision.GetComponent<BossController_4>();
             if (bossEnemy != null)
             {
-                bossEnemy.TakeDamage(damage);
+                bossEnemy.TakeDamage(player.damage);
+            }           
+            BossMovementController boss3Enemy = collision.GetComponent<BossMovementController>();
+            if (boss3Enemy != null)
+            {
+                boss3Enemy.TakeDamage(player.damage);
+            }
+            BasicEnemyMap3 map3Enemy = collision.GetComponent<BasicEnemyMap3>();
+            if (map3Enemy != null)
+            {
+                map3Enemy.TakeDamage(player.damage);
             }
         }
 

@@ -62,6 +62,8 @@ public class GameManager : MonoBehaviour
     public void RetryGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1f;
     }
     public void CompleteMap()
     {
@@ -81,5 +83,13 @@ public class GameManager : MonoBehaviour
 
         // Load the next scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public void QuitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+            Application.Quit();
+#endif
     }
 }

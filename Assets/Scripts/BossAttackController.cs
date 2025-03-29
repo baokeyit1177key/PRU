@@ -1,11 +1,14 @@
 using UnityEngine;
 using System.Collections;
+using static PlayerController;
 
 public class BossAttackController : MonoBehaviour
 {
     [Header("Attack Configuration")]
     [SerializeField] private Transform projectileSpawnPoint;
     [SerializeField] private Transform beamSpawnPoint;
+    [SerializeField] private float detectionRange = 15f; // Add this: detection range for the boss
+    [SerializeField] private bool drawDebugRange = true; // Add this: to visualize the range in editor
 
     [Header("Beam Attack Settings")]
     [SerializeField] private GameObject beamSpritePrefab;
@@ -20,7 +23,7 @@ public class BossAttackController : MonoBehaviour
     [SerializeField] private GameObject arrowPrefab;
     [SerializeField] private float arrowSpeed = 10f;
     [SerializeField] private int poisonDamage = 3;
-    [SerializeField] private float poisonDuration = 3f;
+    [SerializeField] private float poisonDuration = 5f;
 
     [Header("Animation References")]
     [SerializeField] public Animator animator;
@@ -31,7 +34,9 @@ public class BossAttackController : MonoBehaviour
     [Header("Damage Parameters")]
     [SerializeField] public int groundHitDamage = 20;
     [SerializeField] public int playerDeflectDamage = 10;
-
+    [SerializeField] private float jumpHeight = 5f;
+    [SerializeField] private float jumpDuration = 0.8f;
+    private Vector3 originalPosition;
     [SerializeField] private PlayerController player;
     // Attack types
     public enum AttackType
@@ -43,7 +48,7 @@ public class BossAttackController : MonoBehaviour
 
     private float lastAttackTime;
     private bool isAttacking = false;
-
+    private bool isJumping = false;
     private void Start()
     {
         lastAttackTime = -minTimeBetweenAttacks; // Allow immediate first attack
@@ -52,7 +57,7 @@ public class BossAttackController : MonoBehaviour
     private void Update()
     {
         // Check if enough time has passed since last attack
-        if (!isAttacking && Time.time >= lastAttackTime + Random.Range(minTimeBetweenAttacks, maxTimeBetweenAttacks))
+        if (!isAttacking && IsPlayerInRange() && !IsInJumpAnimation() && Time.time >= lastAttackTime + Random.Range(minTimeBetweenAttacks, maxTimeBetweenAttacks))
         {
             PerformRandomAttack();
         }
@@ -60,6 +65,7 @@ public class BossAttackController : MonoBehaviour
 
     private void PerformRandomAttack()
     {
+        if (!IsPlayerInRange()) return;
         // Randomly choose between attack types
         AttackType selectedAttack = (AttackType)Random.Range(0, System.Enum.GetValues(typeof(AttackType)).Length);
 
@@ -71,11 +77,47 @@ public class BossAttackController : MonoBehaviour
             case AttackType.PoisonArrowAttack:
                 StartCoroutine(PerformPoisonArrowAttack());
                 break;
+            case AttackType.JumpAttack:
+                PerformJumpArrowAttack();
+                break;
         }
     }
+    private bool IsPlayerInRange()
+    {
+        if (player == null)
+        {
+            GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+            if (playerObj != null)
+            {
+                player = playerObj.GetComponent<PlayerController>();
+            }
+            else
+            {
+                return false; // No player found
+            }
+        }
 
+        // Check if player is within detection range
+        float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
+        return distanceToPlayer <= detectionRange;
+    }
+
+    // Add this to visualize the detection range in the editor
+    private void OnDrawGizmos()
+    {
+        if (drawDebugRange)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, detectionRange);
+        }
+    }
     private IEnumerator PerformBeamAttack(float delay)
     {
+        if (!IsPlayerInRange())
+        {
+            isAttacking = false;
+            yield break;
+        }
         isAttacking = true;
         lastAttackTime = Time.time;       
         // Trigger beam attack animation
@@ -112,7 +154,7 @@ public class BossAttackController : MonoBehaviour
             if (player != null)
             {
                 Debug.Log($"Beam hit player {hit.collider.gameObject.name} at {hit.point}, dealing {beamDamage} damage");
-                player.TakeDamage(beamDamage);
+                player.TakeDamage(beamDamage, DamageType.Normal);
             }
             else
             {
@@ -128,7 +170,15 @@ public class BossAttackController : MonoBehaviour
 
         isAttacking = false;
     }
-    public void PerformJumpArrowAttack()
+    private void PerformJumpArrowAttack()
+    {
+        if (isJumping || IsPlayerInRange() ) return;
+
+
+        StartCoroutine(JumpAndShootRoutine());
+
+    }
+    private void ShootArrows()
     {
         GameObject arrow = Instantiate(arrowPrefab, projectileSpawnPoint.position, Quaternion.identity);
         arrow.SetActive(true);
@@ -140,6 +190,42 @@ public class BossAttackController : MonoBehaviour
         // Add arrow collision detection
         ArrowProjectile arrowScript = arrow.AddComponent<ArrowProjectile>();
         arrowScript.Initialize(this, groundLayer, playerLayer);
+    }
+    private IEnumerator JumpAndShootRoutine()
+    {
+        isJumping = true;
+        animator.SetTrigger("Jump");
+
+        // Store original position
+        originalPosition = transform.position;
+
+        // Jump up
+        float elapsedTime = 0f;
+        while (elapsedTime < jumpDuration / 2)
+        {
+            float t = elapsedTime / (jumpDuration / 2);
+            transform.position = Vector3.Lerp(originalPosition, originalPosition + Vector3.up * jumpHeight, t);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        yield return new WaitForSeconds(0.42f);
+        // Shoot arrows
+        ShootArrows();
+
+        // Fall down
+        elapsedTime = 0f;
+        while (elapsedTime < jumpDuration / 2)
+        {
+            float t = elapsedTime / (jumpDuration / 2);
+            transform.position = Vector3.Lerp(originalPosition + Vector3.up * jumpHeight, originalPosition, t);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        // Reset position and state
+        transform.position = originalPosition;
+        animator.SetTrigger("Land");
+        isJumping = false;
     }
 
     private IEnumerator PerformPoisonArrowAttack()
@@ -167,7 +253,6 @@ public class BossAttackController : MonoBehaviour
 
         // Add poison arrow behavior
         PoisonArrowController arrowController = arrow.AddComponent<PoisonArrowController>();
-        arrowController.Initialize(poisonDamage, poisonDuration);
 
         // Wait for attack to complete
         yield return new WaitForSeconds(1f);

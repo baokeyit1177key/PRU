@@ -1,4 +1,5 @@
 using UnityEngine;
+using static PlayerController;
 
 public class MushroomMob : BasicEnemyMap4
 {
@@ -17,7 +18,7 @@ public class MushroomMob : BasicEnemyMap4
                 PlayerController player = hitCollider.GetComponent<PlayerController>();
                 if (player != null)
                 {
-                    player.TakeDamage(attackDamage);
+                    player.TakeDamage(attackDamage, DamageType.Normal);
                 }
             }
             //else if (hitCollider.CompareTag("Damageable")) // Optional: for other entities that can take damage
